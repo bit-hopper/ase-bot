@@ -13,10 +13,10 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "migrate": "tsx --env-file=.env src/db/migrate.ts",
+    "migrate": "tsx --env-file-if-exists=.env src/db/migrate.ts",
     "validate-templates": "tsx src/templates/validateTemplates.ts",
-    "verify-ephemeris": "tsx --env-file=.env src/astro/verifyEphemeris.ts",
-    "start": "tsx --env-file=.env src/main.ts"
+    "verify-ephemeris": "tsx --env-file-if-exists=.env src/astro/verifyEphemeris.ts",
+    "start": "tsx --env-file-if-exists=.env src/main.ts"
   },
   "dependencies": {
     "@atproto/api": "^0.13.35",
