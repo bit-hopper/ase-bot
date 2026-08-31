@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+
+# Swiss Ephemeris data files — fetched via setup/CI, not committed (binary, third-party licensed)
+ephe/
+
+# Local Claude Code settings
+.claude/settings.local.json

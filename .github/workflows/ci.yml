@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: ase
+          POSTGRES_PASSWORD: ase
+          POSTGRES_DB: ase
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: redis:7-alpine
+        ports: ["6379:6379"]
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      # loadEnv() requires these to be present for migrate/test/build even though CI never
+      # authenticates to Bluesky (npm start, which does, is not run here) — placeholders only.
+      ASE_HANDLE: ci-placeholder.bsky.social
+      ASE_APP_PASSWORD: 0000-0000-0000-0000
+      ASE_DID: did:plc:ci0000000000000000000000000
+      DATABASE_URL: postgresql://ase:ase@localhost:5432/ase
+      REDIS_URL: redis://localhost:6379
+      SWEPH_PATH: ${{ github.workspace }}/ephe
+      EPHEMERIS_CACHE_TTL_HOURS: "2"
+      WORKER_CONCURRENCY: "5"
+      DAILY_READINGS_LIMIT: "20"
+      HOURLY_READINGS_LIMIT: "5"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - run: npm ci
+
+      # Main-planet + Moon Swiss Ephemeris data, 1800-2400 (§5.1 required bodies: Sun through
+      # Pluto). No asteroid/BC/lunar-moons files needed — see node_modules/sweph/README.md.
+      - name: Fetch Swiss Ephemeris data
+        run: |
+          mkdir -p "$SWEPH_PATH"
+          curl -fL -o "$SWEPH_PATH/sepl_18.se1" https://raw.githubusercontent.com/aloistr/swisseph/master/ephe/sepl_18.se1
+          curl -fL -o "$SWEPH_PATH/semo_18.se1" https://raw.githubusercontent.com/aloistr/swisseph/master/ephe/semo_18.se1
+
+      - run: npm run verify-ephemeris
+      - run: npm run migrate
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm test
+
+      # Template library is still incomplete by design (see README) — report status without
+      # failing the build until content authoring is done.
+      - name: Validate templates (informational — not yet gating)
+        run: npm run validate-templates
+        continue-on-error: true

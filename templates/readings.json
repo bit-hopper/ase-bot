@@ -1,0 +1,3026 @@
+[
+  {
+    "card": "seven_of_wands",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are speaking the same language right now — both are fire, both want to be seen. The {{cardName}} says the visibility you've earned is worth defending. This is not the moment to make yourself smaller.",
+    "closing": "What is the one thing you've built that deserves your full protection today?"
+  },
+  {
+    "card": "seven_of_wands",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} energy is louder than your natural {{sun}} rhythm. The {{cardName}} arrives asking you to hold ground anyway — even when standing out feels against your instincts.",
+    "closing": "What would it look like to defend your position without abandoning who you are?"
+  },
+  {
+    "card": "seven_of_wands",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} presses on the {{cardName}}'s ground of defense while {{currentSeason}} carries on around you, unbothered. Hold your line — not everything asks for a reaction.",
+    "closing": "Where are you spending energy defending something no one is actually attacking?"
+  },
+  {
+    "card": "seven_of_wands",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} carries the same fire as your {{sun}} Sun, even from a different corner of the sky. The {{cardName}} finds you already holding the higher ground — the only question is whether you keep defending it.",
+    "closing": "What ground have you already won that still needs your attention?"
+  },
+  {
+    "card": "seven_of_wands",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air lifts your {{sun}} Sun's fire rather than testing it, giving your position room to breathe. The {{cardName}} turns defense into something closer to visibility — you're not under siege, you're simply seen.",
+    "closing": "What changes if you treat this as recognition instead of a fight?"
+  },
+  {
+    "card": "seven_of_wands",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares off against your {{sun}} Sun, and the {{cardName}} shows exactly what that friction costs: constant vigilance, for ground worth holding anyway. This isn't the season that makes defending yourself easy.",
+    "closing": "What's the difference between holding your ground and holding your breath?"
+  },
+  {
+    "card": "seven_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's fire so exactly that the exhaustion in the {{cardName}}, reversed, reads as self-inflicted — you've been defending a position nothing is actually attacking.",
+    "closing": "What would happen if you simply stopped bracing?"
+  },
+  {
+    "card": "seven_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's elemental drive, but shared fire doesn't mean shared stamina. The {{cardName}}, reversed, shows the moment the high ground stops feeling worth the climb.",
+    "closing": "What are you still defending out of habit rather than conviction?"
+  },
+  {
+    "card": "seven_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air should be easing your {{sun}} Sun's fire, but the {{cardName}}, reversed, shows a position held so long you've stopped noticing the pressure already lifted.",
+    "closing": "What have you kept defending after the threat was already gone?"
+  },
+  {
+    "card": "seven_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}}, reversed, shows what happens when you defend a position from both sides of the argument at once. Something has to give first.",
+    "closing": "Which side of this are you actually standing on?"
+  },
+  {
+    "card": "seven_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a fight that keeps renewing itself before either side can win. The friction isn't the problem — refusing to rest between rounds is.",
+    "closing": "What would it look like to step back before you're forced to?"
+  },
+  {
+    "card": "seven_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't pressing on your {{sun}} Sun in any particular direction today, and the {{cardName}}, reversed, shows a defense kept up out of momentum rather than necessity.",
+    "closing": "What are you still guarding that no one else remembers was ever contested?"
+  },
+  {
+    "card": "three_of_wands",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are fanning the same fire, and the {{cardName}} shows the venture you set in motion finally clearing the horizon. What you started is coming back to you.",
+    "closing": "What early investment is finally close enough to see the return on?"
+  },
+  {
+    "card": "three_of_wands",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} burns with the same restless push as your {{sun}} Sun, even from a different sign. The {{cardName}} has you standing at the shore, watching for the ships you sent out.",
+    "closing": "What are you still waiting to see arrive?"
+  },
+  {
+    "card": "three_of_wands",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air lifts your {{sun}} Sun's fire into something that actually carries — the {{cardName}} shows foresight paying off exactly because you let the wind help.",
+    "closing": "What plan got further because you stopped pushing and let it move on its own?"
+  },
+  {
+    "card": "three_of_wands",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} sits opposite your {{sun}} Sun, and the {{cardName}} asks you to expand your view rather than defend it — the ventures returning may not look how you expected.",
+    "closing": "What if the return doesn't match the plan, but still counts?"
+  },
+  {
+    "card": "three_of_wands",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows expansion that isn't frictionless — the horizon is real, but reaching it costs something.",
+    "closing": "What's worth the friction of getting there?"
+  },
+  {
+    "card": "three_of_wands",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves without pulling hard on your {{sun}} Sun today, and the {{cardName}} simply marks the moment: ventures set in motion long ago are still en route.",
+    "closing": "What did you launch that you haven't checked on in a while?"
+  },
+  {
+    "card": "three_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's fire exactly, which makes the {{cardName}}, reversed, sting more — the delay isn't the sky's fault, it's a venture that stalled on its own terms.",
+    "closing": "What did you expect to have arrived by now?"
+  },
+  {
+    "card": "three_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's elemental drive, but drive alone doesn't move a stalled plan. The {{cardName}}, reversed, shows the ships still somewhere over the horizon, later than promised.",
+    "closing": "What would you do differently if the return never comes?"
+  },
+  {
+    "card": "three_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air should be carrying your {{sun}} Sun's plans forward, but the {{cardName}}, reversed, shows a wind that's died down at the worst possible moment.",
+    "closing": "What are you still waiting on that you could move without?"
+  },
+  {
+    "card": "three_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, has you looking backward at what you sent out instead of forward at what's next.",
+    "closing": "What are you replaying that's already over?"
+  },
+  {
+    "card": "three_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows disappointment compounding the friction — the delay and the difficulty arrived together.",
+    "closing": "What's still worth pursuing even on the slow timeline?"
+  },
+  {
+    "card": "three_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pushing your {{sun}} Sun today, and the {{cardName}}, reversed, simply marks a venture taking longer than expected, with no one to blame for it.",
+    "closing": "What deadline have you quietly let move without asking why?"
+  },
+  {
+    "card": "four_of_wands",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are celebrating the same thing, and the {{cardName}} throws the doors open on it — this is a foundation worth marking out loud.",
+    "closing": "What have you built that deserves an actual celebration, not just relief?"
+  },
+  {
+    "card": "four_of_wands",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} carries your {{sun}} Sun's fire into a gentler register, and the {{cardName}} shows the party finally happening at home instead of somewhere you had to travel for it.",
+    "closing": "What does home look like when it's not a work in progress?"
+  },
+  {
+    "card": "four_of_wands",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air moves easily through your {{sun}} Sun's fire, and the {{cardName}} shows a foundation stable enough that nothing needs defending — only enjoying.",
+    "closing": "What have you been guarding that's actually already safe?"
+  },
+  {
+    "card": "four_of_wands",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} asks you to celebrate a foundation built with someone whose approach looks nothing like yours.",
+    "closing": "What's worth honoring even when it was built a different way than you would have?"
+  },
+  {
+    "card": "four_of_wands",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a stable foundation that still took real friction to lay down.",
+    "closing": "What peace did you have to argue your way into?"
+  },
+  {
+    "card": "four_of_wands",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves quietly today, unconnected to your {{sun}} Sun, and the {{cardName}} simply marks a foundation doing exactly what foundations do — holding, without needing applause.",
+    "closing": "What steady thing in your life hasn't been thanked in a while?"
+  },
+  {
+    "card": "four_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's fire, and the {{cardName}}, reversed, shows tension at home that's burning exactly as hot as everything else right now.",
+    "closing": "What peace are you keeping inside instead of bringing to the table?"
+  },
+  {
+    "card": "four_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's elemental charge, and the {{cardName}}, reversed, shows a foundation in transition — not broken, just being rebuilt mid-use.",
+    "closing": "What are you rebuilding while still living inside it?"
+  },
+  {
+    "card": "four_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air should be easing your {{sun}} Sun's fire, but the {{cardName}}, reversed, shows peace that's been internalized instead of spoken — held quietly rather than resolved.",
+    "closing": "What would happen if you said the quiet part out loud?"
+  },
+  {
+    "card": "four_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows two different definitions of home colliding at the same table.",
+    "closing": "Whose version of stability are you currently living inside?"
+  },
+  {
+    "card": "four_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows domestic tension that's less about the foundation and more about who gets to define it.",
+    "closing": "What's the actual disagreement underneath the argument?"
+  },
+  {
+    "card": "four_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, shows a transition quietly underway at home, with no urgency attached to it yet.",
+    "closing": "What's shifting at home that you haven't named yet?"
+  },
+  {
+    "card": "two_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}} clears the runway your {{sun}} Sun has been quietly building. The {{cardName}}, reversed, isn't a no — it's a pause before a bigger yes than the one you were planning.",
+    "closing": "What decision have you been ready to make longer than you've admitted?"
+  },
+  {
+    "card": "two_of_wands",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are pointed at the exact same horizon right now — both fire, both restless to begin. The {{cardName}} says the plan you've been sketching is ready to leave the drawing board.",
+    "closing": "What's the first concrete step, if you stopped waiting for a better sign?"
+  },
+  {
+    "card": "two_of_wands",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's elemental hunger for a new horizon, even without matching it sign for sign. The {{cardName}} finds you at the map table, tracing a route only you can see yet.",
+    "closing": "Which direction have you already circled twice without committing to it?"
+  },
+  {
+    "card": "two_of_wands",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}} clears the air around your {{sun}} Sun's fire, sharpening the view instead of feeding it. The {{cardName}} turns a still-forming plan into something you can finally see the whole shape of.",
+    "closing": "What becomes possible once you stop guessing and actually look at the map?"
+  },
+  {
+    "card": "two_of_wands",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands exactly opposite your {{sun}} Sun right now, insisting there's another way to read the horizon. The {{cardName}} doesn't ask you to abandon your plan — only to hold the opposing view up next to it before you commit.",
+    "closing": "What does the other side of this decision actually want you to notice?"
+  },
+  {
+    "card": "two_of_wands",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} keeps snagging on your {{sun}} Sun's usual approach, forcing a rethink mid-plan. The {{cardName}} stands holding two globes, not one — proof the friction is about scope, not failure.",
+    "closing": "What would you change about the plan if the resistance turned out to be useful information?"
+  },
+  {
+    "card": "two_of_wands",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}}'s current position and your {{sun}} Sun aren't pulling in any particular direction together — this is simply the sky's own quiet moment. The {{cardName}} still asks its question regardless: whether the vision in front of you is worth the first step.",
+    "closing": "What plan have you been holding at arm's length, waiting for a permission that isn't coming from outside?"
+  },
+  {
+    "card": "two_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun agree completely right now — which is exactly the problem. The {{cardName}}, reversed, shows two instincts that trust each other's caution so much that neither one moves first.",
+    "closing": "What are you and your own instincts protecting each other from actually trying?"
+  },
+  {
+    "card": "two_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}}'s fire recognizes your {{sun}} Sun's fire, but recognition isn't the same as momentum. The {{cardName}}, reversed, is still standing at the threshold, still holding both globes, still deciding.",
+    "closing": "What would it cost you to pick an imperfect direction over a perfect delay?"
+  },
+  {
+    "card": "two_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} sits opposite your {{sun}} Sun, and the pull in two directions has frozen the decision entirely. The {{cardName}}, reversed, isn't undecided by nature — it's undecided because both options currently look equally loud.",
+    "closing": "If both paths went quiet for a moment, which one would you actually miss?"
+  },
+  {
+    "card": "two_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares off against your {{sun}} Sun, and the resulting friction has you circling the plan instead of starting it. The {{cardName}}, reversed, mistakes the discomfort of resistance for a sign to wait longer.",
+    "closing": "What part of this plan were you never actually unsure about?"
+  },
+  {
+    "card": "two_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pushing you one way or the other today, and the {{cardName}}, reversed, has taken that as license to stall. Quiet skies don't require a decision, but they don't forbid one either.",
+    "closing": "What's the actual cost of choosing today instead of tomorrow?"
+  },
+  {
+    "card": "five_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are standing in the same cold together, and the {{cardName}} names it plainly: something real has been lost, right when it's hardest to ignore.",
+    "closing": "What are you still pretending you don't need help with?"
+  },
+  {
+    "card": "five_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded weight, and the {{cardName}} shows scarcity that's circumstantial, not permanent — the ground is still there, just harder to feel right now.",
+    "closing": "What resource do you actually still have, even though it doesn't feel like it?"
+  },
+  {
+    "card": "five_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current moves alongside your {{sun}} Sun's earth, softening what the {{cardName}} would otherwise leave hard and cold. Loss is real here, but it isn't isolating.",
+    "closing": "Who's already standing closer to you than you've noticed?"
+  },
+  {
+    "card": "five_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} sits opposite your {{sun}} Sun, and the {{cardName}} shows a scarcity that looks different depending on which side of the window you're standing on.",
+    "closing": "What looks like loss from here, but wouldn't from somewhere else?"
+  },
+  {
+    "card": "five_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows exactly how it feels to be locked out of a warmth you can still see through the glass.",
+    "closing": "What door have you stopped even trying?"
+  },
+  {
+    "card": "five_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply names a scarcity that's circumstantial — real, but not a verdict on you.",
+    "closing": "What's actually missing, versus what just feels missing?"
+  },
+  {
+    "card": "five_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's earth exactly, and the {{cardName}}, reversed, shows recovery finally taking root in ground that's fully yours again.",
+    "closing": "What's rebuilding faster than you expected?"
+  },
+  {
+    "card": "five_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded nature, and the {{cardName}}, reversed, shows a structural recovery — slow, steady, and real.",
+    "closing": "What foundation are you quietly repairing?"
+  },
+  {
+    "card": "five_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current supports your {{sun}} Sun's earth, and the {{cardName}}, reversed, shows a renewal that comes easier than the hardship that preceded it.",
+    "closing": "What help did you finally let yourself accept?"
+  },
+  {
+    "card": "five_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a recovery that looks like retreat from one side and like healing from the other.",
+    "closing": "Which version of this story are you telling yourself?"
+  },
+  {
+    "card": "five_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a renewal that had to push through real resistance to arrive.",
+    "closing": "What did this recovery actually cost you?"
+  },
+  {
+    "card": "five_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, simply marks a quiet return to solid ground.",
+    "closing": "What's steady again that you'd stopped counting on?"
+  },
+  {
+    "card": "six_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both weighing the same scale right now, and the {{cardName}} shows giving and receiving finally balanced on it.",
+    "closing": "Where in your life is the exchange actually even?"
+  },
+  {
+    "card": "six_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's earthy patience, and the {{cardName}} shows a reciprocity that doesn't need to be forced — it's simply how things are moving right now.",
+    "closing": "Who have you helped lately without keeping score?"
+  },
+  {
+    "card": "six_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current flows easily around your {{sun}} Sun's earth, and the {{cardName}} shows a generosity that costs nothing to give because there's enough to go around.",
+    "closing": "What abundance are you sitting on that's meant to be shared?"
+  },
+  {
+    "card": "six_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} asks you to notice which side of the exchange you're actually on today.",
+    "closing": "Are you the one giving, or the one being given to — and does it matter?"
+  },
+  {
+    "card": "six_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a balance that takes real effort to maintain, not something that happens on its own.",
+    "closing": "What would it take to make this exchange feel less like work?"
+  },
+  {
+    "card": "six_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves independently of your {{sun}} Sun today, and the {{cardName}} simply marks a moment of quiet, ordinary reciprocity.",
+    "closing": "What small exchange today deserves more notice than you're giving it?"
+  },
+  {
+    "card": "six_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's earth exactly, and the {{cardName}}, reversed, shows a generosity with strings woven so tightly into the giving that they're hard to see.",
+    "closing": "What's actually being asked of you in exchange for this help?"
+  },
+  {
+    "card": "six_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded nature, and the {{cardName}}, reversed, shows a power dynamic hiding inside what looks like kindness.",
+    "closing": "Who benefits most from you accepting this the way it's offered?"
+  },
+  {
+    "card": "six_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current should be easing your {{sun}} Sun's earth, but the {{cardName}}, reversed, shows an exchange that only looks balanced from a distance.",
+    "closing": "What would this look like if you examined it up close?"
+  },
+  {
+    "card": "six_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows two very different accounts of who owes whom.",
+    "closing": "Whose version of this debt are you currently paying?"
+  },
+  {
+    "card": "six_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a generosity that's become a source of friction rather than goodwill.",
+    "closing": "What would happen if you named the imbalance directly?"
+  },
+  {
+    "card": "six_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes an exchange worth a second look.",
+    "closing": "What favor are you still waiting to see repaid?"
+  },
+  {
+    "card": "seven_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun share the same patient ground, and the {{cardName}} shows an investment finally worth pausing to assess.",
+    "closing": "What have you planted that's ready for an honest look?"
+  },
+  {
+    "card": "seven_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} carries your {{sun}} Sun's earthy steadiness, and the {{cardName}} shows the long game paying off exactly on its own timeline.",
+    "closing": "What are you still tending that hasn't shown results yet — and are you okay with that?"
+  },
+  {
+    "card": "seven_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current supports your {{sun}} Sun's earth, and the {{cardName}} shows patience rewarded without needing to be defended.",
+    "closing": "What's grown steadily enough that you almost stopped noticing?"
+  },
+  {
+    "card": "seven_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} asks you to assess this investment from an angle you wouldn't naturally choose.",
+    "closing": "What does this look like from the other side of the field?"
+  },
+  {
+    "card": "seven_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a long-term investment taking longer than the friction makes comfortable.",
+    "closing": "What's the actual cost of waiting a little longer?"
+  },
+  {
+    "card": "seven_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves quietly today, and the {{cardName}} simply marks a moment for patient assessment — no rush, no verdict yet.",
+    "closing": "What deserves a status check today, even without an answer ready?"
+  },
+  {
+    "card": "seven_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's earth exactly, and the {{cardName}}, reversed, names the discomfort of effort that hasn't paid off on the timeline you wanted.",
+    "closing": "What are you ready to admit isn't working the way you hoped?"
+  },
+  {
+    "card": "seven_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded patience, but even patient ground runs out eventually. The {{cardName}}, reversed, shows impatience finally winning the argument.",
+    "closing": "What have you outgrown the willingness to keep waiting for?"
+  },
+  {
+    "card": "seven_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current should ease your {{sun}} Sun's earth, but the {{cardName}}, reversed, shows short-term thinking creeping into a long-term plan.",
+    "closing": "What would you decide differently if you took the long view seriously again?"
+  },
+  {
+    "card": "seven_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a wasted effort that only looks wasted from one particular angle.",
+    "closing": "Is this actually a loss, or just a different kind of return?"
+  },
+  {
+    "card": "seven_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows the exact moment patience curdles into frustration.",
+    "closing": "What's the difference between quitting and redirecting?"
+  },
+  {
+    "card": "seven_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly marks an effort that hasn't found its return yet, with no verdict required today.",
+    "closing": "What are you willing to reassess without abandoning entirely?"
+  },
+  {
+    "card": "eight_of_swords",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are circling the same thought pattern right now, and the {{cardName}} shows a cage built entirely out of assumptions no one has tested.",
+    "closing": "What wall around you would simply fall over if you leaned on it?"
+  },
+  {
+    "card": "eight_of_swords",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's restless mental air, and the {{cardName}} shows limits that feel absolute but were never actually locked.",
+    "closing": "What rule are you following that no one ever actually enforced?"
+  },
+  {
+    "card": "eight_of_swords",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire warms your {{sun}} Sun's air just enough to notice the blindfold isn't tied as tight as it feels. The {{cardName}} shows a way out closer than it looks.",
+    "closing": "What's the smallest movement that would prove you're not actually stuck?"
+  },
+  {
+    "card": "eight_of_swords",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} sits opposite your {{sun}} Sun, and the {{cardName}} shows the limits you've built looking completely different from where the season stands.",
+    "closing": "What would someone standing opposite you say is actually keeping you here?"
+  },
+  {
+    "card": "eight_of_swords",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} names the exact friction of feeling boxed in by something that resists a clean fix.",
+    "closing": "What have you stopped trying to move because it hurt to try?"
+  },
+  {
+    "card": "eight_of_swords",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks a limit that's self-imposed — real in effect, optional in origin.",
+    "closing": "What boundary have you never actually tested?"
+  },
+  {
+    "card": "eight_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's air exactly, and the {{cardName}}, reversed, shows the blindfold finally coming off — the alternatives were there the whole time.",
+    "closing": "What option can you suddenly see that was invisible yesterday?"
+  },
+  {
+    "card": "eight_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's mental air, and the {{cardName}}, reversed, shows fear loosening its grip just enough to let clarity in.",
+    "closing": "What does the situation look like now that the fear has quieted?"
+  },
+  {
+    "card": "eight_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire lights up your {{sun}} Sun's air, and the {{cardName}}, reversed, shows the unlock arriving easily, almost without effort.",
+    "closing": "What suddenly feels simple that felt impossible last week?"
+  },
+  {
+    "card": "eight_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows an alternative view arriving from exactly the direction you weren't looking.",
+    "closing": "What would the opposite perspective actually show you?"
+  },
+  {
+    "card": "eight_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a mental unlock that still takes real work to trust.",
+    "closing": "What would it take to actually believe the cage is open?"
+  },
+  {
+    "card": "eight_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, simply notes a quiet, unforced clarity settling in.",
+    "closing": "What do you see now that you didn't before, with no explanation needed?"
+  },
+  {
+    "card": "nine_of_swords",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both awake at 3am with the same thought on loop, and the {{cardName}} names the racing mind for what it is.",
+    "closing": "What worry keeps returning even after you've already answered it?"
+  },
+  {
+    "card": "nine_of_swords",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's restless air, and the {{cardName}} shows a mind that won't quite let the body rest.",
+    "closing": "What would it take to let one worry go untended tonight?"
+  },
+  {
+    "card": "nine_of_swords",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire moves through your {{sun}} Sun's air, and the {{cardName}} shows a worry that's loud but, underneath it, not as large as it sounds.",
+    "closing": "What's the actual size of the thing you're afraid of, once you look at it directly?"
+  },
+  {
+    "card": "nine_of_swords",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a worry that looks completely different depending on the hour you're standing in.",
+    "closing": "What would this fear look like in daylight?"
+  },
+  {
+    "card": "nine_of_swords",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} names a worry compounded by real, active friction — not imagined, just amplified.",
+    "closing": "What part of this worry is real, and what part is the hour talking?"
+  },
+  {
+    "card": "nine_of_swords",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves independently today, and the {{cardName}} simply marks a mind that's racing on its own, without the sky adding fuel to it.",
+    "closing": "What thought would quiet down if you just wrote it down and closed the notebook?"
+  },
+  {
+    "card": "nine_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's air exactly, and the {{cardName}}, reversed, shows fear finally loosening its grip on a mind that's been circling the same worry.",
+    "closing": "What does the morning look like now that the worst version of the night has passed?"
+  },
+  {
+    "card": "nine_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's mental air, and the {{cardName}}, reversed, shows a clearer look at what's actually real, underneath the noise.",
+    "closing": "What turned out to be smaller than the worry made it seem?"
+  },
+  {
+    "card": "nine_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire warms your {{sun}} Sun's air, and the {{cardName}}, reversed, shows relief arriving faster than the worry ever did.",
+    "closing": "What eased before you even had to fight for it?"
+  },
+  {
+    "card": "nine_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a fear finally seen from the other side, where it looks much smaller.",
+    "closing": "What changes when you look at this from across the room instead of inside it?"
+  },
+  {
+    "card": "nine_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a relief that still has to work through real resistance before it lands.",
+    "closing": "What's still standing between you and actually believing you're okay?"
+  },
+  {
+    "card": "nine_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pushing on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly marks a mind finally settling on its own.",
+    "closing": "What thought finally went quiet without you having to fight it?"
+  },
+  {
+    "card": "ten_of_swords",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are standing at the exact same ending together, and the {{cardName}} doesn't soften it: this chapter is over.",
+    "closing": "What's actually finished, even if you haven't said so out loud yet?"
+  },
+  {
+    "card": "ten_of_swords",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's mental air, and the {{cardName}} shows an ending that's hard but also, finally, complete.",
+    "closing": "What's easier to face now that there's nowhere left to fall?"
+  },
+  {
+    "card": "ten_of_swords",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire moves through your {{sun}} Sun's air, and the {{cardName}} shows an ending that, however sharp, clears space almost immediately.",
+    "closing": "What's already trying to grow in the space this ending left?"
+  },
+  {
+    "card": "ten_of_swords",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows an ending that looks like defeat from here and like release from somewhere else.",
+    "closing": "What would this look like if you called it a release instead?"
+  },
+  {
+    "card": "ten_of_swords",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} names an ending that arrived with real friction, not a clean break.",
+    "closing": "What part of this ending are you still fighting instead of accepting?"
+  },
+  {
+    "card": "ten_of_swords",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks an ending that's already happened, quietly, without needing your permission.",
+    "closing": "What have you already let go of, even if you haven't admitted it yet?"
+  },
+  {
+    "card": "ten_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's air exactly, and the {{cardName}}, reversed, shows reinvention finally arriving — overdue, but arriving.",
+    "closing": "What are you finally ready to rebuild?"
+  },
+  {
+    "card": "ten_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's mental air, and the {{cardName}}, reversed, shows an early healing — not finished, but genuinely underway.",
+    "closing": "What's the first small sign that things are turning?"
+  },
+  {
+    "card": "ten_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire warms your {{sun}} Sun's air, and the {{cardName}}, reversed, shows a reinvention that comes easier than the ending that preceded it.",
+    "closing": "What new shape is forming faster than you expected?"
+  },
+  {
+    "card": "ten_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a healing that looks premature from one side and overdue from the other.",
+    "closing": "Which version of the timeline are you trusting right now?"
+  },
+  {
+    "card": "ten_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a reinvention that still has real resistance to move through.",
+    "closing": "What's the next hard step in rebuilding, even if it's slow?"
+  },
+  {
+    "card": "ten_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly marks a healing that's simply taking its own time.",
+    "closing": "What's mending on a timeline you can't rush?"
+  },
+  {
+    "card": "two_of_cups",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are moving through the same tide, and the {{cardName}} shows a bond that finally has both people fully in it.",
+    "closing": "What connection right now feels like it's actually mutual, not one-sided?"
+  },
+  {
+    "card": "two_of_cups",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} carries your {{sun}} Sun's watery depth, and the {{cardName}} shows a partnership finding its footing without either side forcing it.",
+    "closing": "What's growing between you and someone else without either of you pushing?"
+  },
+  {
+    "card": "two_of_cups",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground steadies your {{sun}} Sun's water, and the {{cardName}} shows a bond that holds its shape because there's something solid underneath it.",
+    "closing": "What makes this connection feel dependable, not just intense?"
+  },
+  {
+    "card": "two_of_cups",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a partnership between two people who complete each other by being different.",
+    "closing": "What does this bond give you that you couldn't give yourself?"
+  },
+  {
+    "card": "two_of_cups",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a bond that's real but still has to work through real friction to hold.",
+    "closing": "What disagreement is actually a sign you both care enough to argue?"
+  },
+  {
+    "card": "two_of_cups",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks a mutual bond quietly holding steady, without needing the sky's help.",
+    "closing": "What partnership deserves a thank-you it hasn't gotten lately?"
+  },
+  {
+    "card": "two_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's water exactly, and the {{cardName}}, reversed, shows two people who feel the same things but somehow still want different things.",
+    "closing": "Where do you and this other person actually disagree, underneath the shared feeling?"
+  },
+  {
+    "card": "two_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery depth, and the {{cardName}}, reversed, shows values that sound aligned but aren't quite pointing the same direction.",
+    "closing": "What have you assumed you both wanted without actually confirming it?"
+  },
+  {
+    "card": "two_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground should be steadying your {{sun}} Sun's water, but the {{cardName}}, reversed, shows a contract that looked solid until it wasn't.",
+    "closing": "What agreement needs to be said out loud again, plainly?"
+  },
+  {
+    "card": "two_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a mismatch that was always there, just easier to ignore until now.",
+    "closing": "What difference between you two were you hoping would resolve itself?"
+  },
+  {
+    "card": "two_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a bond straining under a disagreement that isn't resolving on its own.",
+    "closing": "What would it take to actually name what's misaligned?"
+  },
+  {
+    "card": "two_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a bond drifting slightly out of sync.",
+    "closing": "What check-in is overdue with someone you care about?"
+  },
+  {
+    "card": "three_of_cups",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are celebrating together, and the {{cardName}} shows a milestone that means more because you're sharing it with people who actually get it.",
+    "closing": "Who deserves to hear about this win directly from you?"
+  },
+  {
+    "card": "three_of_cups",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} carries your {{sun}} Sun's watery warmth, and the {{cardName}} shows a community moment arriving right on cue.",
+    "closing": "What group of people has quietly become your people?"
+  },
+  {
+    "card": "three_of_cups",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground supports your {{sun}} Sun's water, and the {{cardName}} shows a celebration that feels earned, not just loud.",
+    "closing": "What milestone are you allowed to actually enjoy, not just check off?"
+  },
+  {
+    "card": "three_of_cups",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a celebration that pulls together people who wouldn't normally mix.",
+    "closing": "What unlikely combination is actually working better than expected?"
+  },
+  {
+    "card": "three_of_cups",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a milestone reached despite real friction along the way.",
+    "closing": "What made this collaboration harder than it looked from outside?"
+  },
+  {
+    "card": "three_of_cups",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves independently today, and the {{cardName}} simply marks an ordinary, uncomplicated joy — no drama required.",
+    "closing": "What small win with other people deserves a toast today?"
+  },
+  {
+    "card": "three_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's water exactly, and the {{cardName}}, reversed, shows a celebration that ran a little too long, leaving less behind than it promised.",
+    "closing": "What good thing did you overdo past the point it still felt good?"
+  },
+  {
+    "card": "three_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery warmth, and the {{cardName}}, reversed, shows ties that look close but stay on the surface.",
+    "closing": "Which of your connections would survive an actual hard conversation?"
+  },
+  {
+    "card": "three_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground should steady your {{sun}} Sun's water, but the {{cardName}}, reversed, shows a group moment that felt good without going anywhere deeper.",
+    "closing": "What would it take to bring more of yourself to this group?"
+  },
+  {
+    "card": "three_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a gathering that looks fun from one angle and hollow from the other.",
+    "closing": "Which version of this scene is actually true for you?"
+  },
+  {
+    "card": "three_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows overindulgence that's covering for a friction no one's addressing directly.",
+    "closing": "What are you avoiding by staying busy with everyone else?"
+  },
+  {
+    "card": "three_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes ties that could use more depth than volume.",
+    "closing": "Which friendship would benefit from a quieter, one-on-one moment?"
+  },
+  {
+    "card": "four_of_cups",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both turned inward right now, and the {{cardName}} names a stillness that's less about apathy and more about waiting for something worth reaching for.",
+    "closing": "What offer in front of you hasn't actually earned your attention yet?"
+  },
+  {
+    "card": "four_of_cups",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery introspection, and the {{cardName}} shows a pause that's doing quiet work even though nothing looks like it's moving.",
+    "closing": "What are you actually sitting with, underneath the boredom?"
+  },
+  {
+    "card": "four_of_cups",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground steadies your {{sun}} Sun's water, and the {{cardName}} shows an introspective pause that's grounding rather than draining.",
+    "closing": "What's this stillness actually giving you, once you stop fighting it?"
+  },
+  {
+    "card": "four_of_cups",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows an offer sitting right in front of you that your current mood won't let you see.",
+    "closing": "What would you notice if you looked up from your own thoughts for a second?"
+  },
+  {
+    "card": "four_of_cups",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} names a stagnation that's actively uncomfortable, not peacefully still.",
+    "closing": "What would it cost you to just look up and choose something?"
+  },
+  {
+    "card": "four_of_cups",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves quietly today, and the {{cardName}} simply marks an ordinary lull — nothing wrong, just nothing moving yet.",
+    "closing": "What have you stopped noticing because you've seen it too many times?"
+  },
+  {
+    "card": "four_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's water exactly, and the {{cardName}}, reversed, shows motivation finally returning to a mind that's been turned inward too long.",
+    "closing": "What are you finally curious about again?"
+  },
+  {
+    "card": "four_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery depth, and the {{cardName}}, reversed, shows an option coming into view that the stillness had been hiding.",
+    "closing": "What's newly visible now that you've lifted your head?"
+  },
+  {
+    "card": "four_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground supports your {{sun}} Sun's water, and the {{cardName}}, reversed, shows renewed motivation arriving with less struggle than expected.",
+    "closing": "What's pulling you forward without you having to force it?"
+  },
+  {
+    "card": "four_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows an unseen option arriving from the exact direction you weren't looking.",
+    "closing": "What did the opposite point of view show you that you missed?"
+  },
+  {
+    "card": "four_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows motivation returning through friction, not ease — you had to push to get here.",
+    "closing": "What did you have to fight your own mood to notice?"
+  },
+  {
+    "card": "four_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly marks a mind coming back online at its own pace.",
+    "closing": "What small interest is returning, without any pressure behind it?"
+  },
+  {
+    "card": "five_of_wands",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both throwing sparks right now, and the {{cardName}} shows competition that's actually sharpening everyone in the room, including you.",
+    "closing": "Who's pushing you right now in a way that's making you better?"
+  },
+  {
+    "card": "five_of_wands",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's restless fire, and the {{cardName}} shows friction that's productive even when it's loud.",
+    "closing": "What disagreement right now is actually testing an idea worth testing?"
+  },
+  {
+    "card": "five_of_wands",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air feeds your {{sun}} Sun's fire without smothering it, and the {{cardName}} shows competition that stays sporting instead of turning ugly.",
+    "closing": "What's it like to compete with someone you actually respect?"
+  },
+  {
+    "card": "five_of_wands",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a contest between two entirely different playing styles, neither one wrong.",
+    "closing": "What can you learn from an approach that looks nothing like yours?"
+  },
+  {
+    "card": "five_of_wands",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} names the friction directly: this growth is coming through real resistance, not around it.",
+    "closing": "What's this struggle actually testing in you?"
+  },
+  {
+    "card": "five_of_wands",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks an ordinary bit of friction — the kind that sharpens more than it hurts.",
+    "closing": "What low-stakes competition is quietly building a skill?"
+  },
+  {
+    "card": "five_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's fire exactly, and the {{cardName}}, reversed, shows too many sparks with nowhere to go — infighting instead of a real contest.",
+    "closing": "What conflict right now has stopped being about anything real?"
+  },
+  {
+    "card": "five_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's restless drive, and the {{cardName}}, reversed, shows a struggle you could avoid entirely, if you chose to.",
+    "closing": "What fight are you in only because you haven't decided to step out of it?"
+  },
+  {
+    "card": "five_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air should be feeding your {{sun}} Sun's fire cleanly, but the {{cardName}}, reversed, shows chaos where there should have been sport.",
+    "closing": "What would it take to make this competitive again instead of just messy?"
+  },
+  {
+    "card": "five_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows two sides so different they've stopped actually arguing the same point.",
+    "closing": "What are you and the other side even fighting about anymore?"
+  },
+  {
+    "card": "five_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a necessary struggle being sidestepped instead of faced.",
+    "closing": "What confrontation are you avoiding that would actually resolve this?"
+  },
+  {
+    "card": "five_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a conflict that's lost its purpose without anyone quite noticing.",
+    "closing": "What argument could you just walk away from today?"
+  },
+  {
+    "card": "six_of_wands",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both riding the same high right now, and the {{cardName}} shows a win that's fully, visibly yours.",
+    "closing": "What are you letting yourself take credit for today?"
+  },
+  {
+    "card": "six_of_wands",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's confident fire, and the {{cardName}} shows validation that's arriving right when you can actually enjoy it.",
+    "closing": "What recognition have you earned but not yet let land?"
+  },
+  {
+    "card": "six_of_wands",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air carries your {{sun}} Sun's fire further than you pushed it yourself, and the {{cardName}} shows a victory that arrived with help, not just effort.",
+    "closing": "Who helped carry this win that deserves to hear it from you?"
+  },
+  {
+    "card": "six_of_wands",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a public victory that looks different depending on who's watching it.",
+    "closing": "Whose recognition actually matters to you here, and whose doesn't?"
+  },
+  {
+    "card": "six_of_wands",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a hard-won validation that cost real effort to earn, friction included.",
+    "closing": "What made this win harder than it looked from outside?"
+  },
+  {
+    "card": "six_of_wands",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves quietly today, and the {{cardName}} simply marks an ordinary bit of progress worth noticing on its own terms.",
+    "closing": "What small win deserves a moment of actual pride?"
+  },
+  {
+    "card": "six_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's fire exactly, and the {{cardName}}, reversed, shows confidence that's burning hot but hollow underneath.",
+    "closing": "What are you performing right now that doesn't actually feel true?"
+  },
+  {
+    "card": "six_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's fire, and the {{cardName}}, reversed, shows a fall from grace that stings more because you'd started believing your own hype.",
+    "closing": "What would it look like to rebuild your confidence on something more solid?"
+  },
+  {
+    "card": "six_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air should be lifting your {{sun}} Sun's fire, but the {{cardName}}, reversed, shows applause that faded faster than expected.",
+    "closing": "What did you build your confidence on that turned out not to hold?"
+  },
+  {
+    "card": "six_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a fall that looks different depending on whose story you're hearing it from.",
+    "closing": "Whose version of this setback are you believing right now?"
+  },
+  {
+    "card": "six_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a hollow confidence cracking under real pressure.",
+    "closing": "What would it take to stand on something true instead of something impressive?"
+  },
+  {
+    "card": "six_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pushing on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a confidence that's due for a reality check.",
+    "closing": "What are you overselling right now, even just to yourself?"
+  },
+  {
+    "card": "eight_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both heads-down in the same craft right now, and the {{cardName}} shows skill accumulating one repetition at a time.",
+    "closing": "What are you getting quietly better at, just by showing up for it?"
+  },
+  {
+    "card": "eight_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded focus, and the {{cardName}} shows craft that's building steadily, without needing an audience yet.",
+    "closing": "What skill are you building that no one's watching you build?"
+  },
+  {
+    "card": "eight_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current supports your {{sun}} Sun's earth, and the {{cardName}} shows practice that feels satisfying rather than grinding.",
+    "closing": "What work has become genuinely enjoyable, not just productive?"
+  },
+  {
+    "card": "eight_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a discipline that looks nothing like your natural style but is working anyway.",
+    "closing": "What method have you borrowed that isn't yours, but still helps?"
+  },
+  {
+    "card": "eight_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows skill-building that's real but slower and harder than you'd like.",
+    "closing": "What's worth the repetition even when it doesn't feel like progress yet?"
+  },
+  {
+    "card": "eight_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks quiet, ordinary craft — no spotlight, just steady hands.",
+    "closing": "What small skill are you sharpening without making a thing of it?"
+  },
+  {
+    "card": "eight_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's earth exactly, and the {{cardName}}, reversed, shows a perfectionism so thorough it's actually stopping the work from shipping.",
+    "closing": "What's finished enough to release, even if it's not perfect?"
+  },
+  {
+    "card": "eight_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded nature, and the {{cardName}}, reversed, shows care curdling into a standard nothing can meet.",
+    "closing": "What would 'good enough' actually look like here?"
+  },
+  {
+    "card": "eight_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current should ease your {{sun}} Sun's earth, but the {{cardName}}, reversed, shows work rushed out before it was ready, in the opposite direction of perfectionism.",
+    "closing": "What deserves a slower pass before it goes out the door?"
+  },
+  {
+    "card": "eight_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a standard that looks reasonable from one side and impossible from the other.",
+    "closing": "Whose definition of quality are you actually holding yourself to?"
+  },
+  {
+    "card": "eight_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a craft stalled by friction between wanting it right and needing it done.",
+    "closing": "What's the actual deadline, versus the one you've invented?"
+  },
+  {
+    "card": "eight_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes work that's stalled without any real drama behind it.",
+    "closing": "What's the smallest version of this you could ship today?"
+  },
+  {
+    "card": "nine_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both settled into the same self-sufficiency right now, and the {{cardName}} shows an abundance that's entirely yours, built without anyone else's help.",
+    "closing": "What have you built that you didn't need anyone's permission for?"
+  },
+  {
+    "card": "nine_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded independence, and the {{cardName}} shows a solitary comfort that isn't lonely, just chosen.",
+    "closing": "What are you enjoying more because you're doing it on your own terms?"
+  },
+  {
+    "card": "nine_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current supports your {{sun}} Sun's earth, and the {{cardName}} shows abundance that feels easy to enjoy, not something you have to defend.",
+    "closing": "What comfort are you allowed to simply enjoy, no justification needed?"
+  },
+  {
+    "card": "nine_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a self-sufficiency built in a way that looks nothing like the season's own instincts.",
+    "closing": "What does your version of independence look like, compared to everyone else's?"
+  },
+  {
+    "card": "nine_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a sovereignty that took real friction, and real solitude, to earn.",
+    "closing": "What did you have to give up time with others to build this?"
+  },
+  {
+    "card": "nine_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves quietly today, and the {{cardName}} simply marks an ordinary, comfortable self-sufficiency, worth noticing on its own.",
+    "closing": "What small comfort have you built for yourself that you rarely acknowledge?"
+  },
+  {
+    "card": "nine_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's earth exactly, and the {{cardName}}, reversed, shows a comfort that's started costing more than it's worth to maintain.",
+    "closing": "What are you spending to keep up an image no one asked for?"
+  },
+  {
+    "card": "nine_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded nature, and the {{cardName}}, reversed, shows independence that's quietly become a cage of its own making.",
+    "closing": "What would it look like to let someone else in on this?"
+  },
+  {
+    "card": "nine_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current should ease your {{sun}} Sun's earth, but the {{cardName}}, reversed, shows abundance spent chasing a status no one's actually checking.",
+    "closing": "Who are you performing this comfort for?"
+  },
+  {
+    "card": "nine_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a lifestyle that looks like success from one angle and like isolation from the other.",
+    "closing": "Which version of this story is closer to how you actually feel?"
+  },
+  {
+    "card": "nine_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows overspending that's compensating for a friction you haven't named yet.",
+    "closing": "What are you buying to avoid feeling something else?"
+  },
+  {
+    "card": "nine_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a comfort that's become more habit than choice.",
+    "closing": "What would you keep, and what would you let go of, if no one was watching?"
+  },
+  {
+    "card": "ten_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both building toward the same long horizon, and the {{cardName}} shows something meant to outlast you.",
+    "closing": "What are you building that isn't really for you at all?"
+  },
+  {
+    "card": "ten_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded patience, and the {{cardName}} shows a legacy taking shape slowly, brick by brick.",
+    "closing": "What foundation are you laying that someone else will stand on later?"
+  },
+  {
+    "card": "ten_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current moves through your {{sun}} Sun's earth, and the {{cardName}} shows a permanent structure built with more ease than it looks like it took.",
+    "closing": "What's already lasting that you haven't stopped to appreciate?"
+  },
+  {
+    "card": "ten_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a legacy built with people whose approach to permanence looks nothing like yours.",
+    "closing": "What does 'lasting' mean to you, compared to how someone else defines it?"
+  },
+  {
+    "card": "ten_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows an architecture built through real disagreement about how to build it.",
+    "closing": "What compromise made this foundation stronger, not weaker?"
+  },
+  {
+    "card": "ten_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks a structure quietly holding, generation after generation.",
+    "closing": "What long-term thing are you part of that rarely gets acknowledged?"
+  },
+  {
+    "card": "ten_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's earth exactly, and the {{cardName}}, reversed, shows cracks appearing in a foundation everyone assumed was solid.",
+    "closing": "What long-standing structure needs an honest inspection?"
+  },
+  {
+    "card": "ten_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded nature, and the {{cardName}}, reversed, shows short-term thinking eating into something meant to last.",
+    "closing": "What decision would look different if you were planning for a decade, not a month?"
+  },
+  {
+    "card": "ten_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current should ease your {{sun}} Sun's earth, but the {{cardName}}, reversed, shows a crack that's easy to miss because everything still looks fine on the surface.",
+    "closing": "What's worth checking on before it becomes a bigger problem?"
+  },
+  {
+    "card": "ten_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a foundation two people are reading in opposite ways.",
+    "closing": "What do you and someone else disagree about when it comes to the long term?"
+  },
+  {
+    "card": "ten_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a structural crack that's been under real pressure for a while now.",
+    "closing": "What's been straining under weight it was never built to hold?"
+  },
+  {
+    "card": "ten_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly marks a small crack worth noting before it spreads.",
+    "closing": "What small maintenance today saves a bigger repair later?"
+  },
+  {
+    "card": "two_of_swords",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both holding the same balance right now, and the {{cardName}} shows a decision deliberately kept on pause, blindfold and all.",
+    "closing": "What decision is actually better left unmade for a little longer?"
+  },
+  {
+    "card": "two_of_swords",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's airy detachment, and the {{cardName}} shows a stalemate that's more strategic than stuck.",
+    "closing": "What are you choosing not to decide yet, on purpose?"
+  },
+  {
+    "card": "two_of_swords",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire moves through your {{sun}} Sun's air, and the {{cardName}} shows a ceasefire that's actually holding, not just paused.",
+    "closing": "What conflict has genuinely settled, not just gone quiet?"
+  },
+  {
+    "card": "two_of_swords",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows two positions so evenly matched that neither side can move first.",
+    "closing": "What would it take for either side to blink?"
+  },
+  {
+    "card": "two_of_swords",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a standoff held in place by real, active friction underneath the calm.",
+    "closing": "What's actually keeping this stalemate from resolving?"
+  },
+  {
+    "card": "two_of_swords",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks a quiet, deliberate pause — no crisis, just a choice not yet made.",
+    "closing": "What decision are you comfortable letting sit for now?"
+  },
+  {
+    "card": "two_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's air exactly, and the {{cardName}}, reversed, shows the blindfold finally forced off — a choice you can no longer put off.",
+    "closing": "What decision has just stopped being avoidable?"
+  },
+  {
+    "card": "two_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's airy detachment, and the {{cardName}}, reversed, shows a hidden truth surfacing whether you're ready or not.",
+    "closing": "What have you known for a while but not let yourself see clearly?"
+  },
+  {
+    "card": "two_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire warms your {{sun}} Sun's air, and the {{cardName}}, reversed, shows a forced choice that turns out easier to make than expected.",
+    "closing": "What decision felt harder in your head than it was in reality?"
+  },
+  {
+    "card": "two_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a truth that looks obvious from one side and invisible from the other.",
+    "closing": "What would you see if you finally looked at this from the other side?"
+  },
+  {
+    "card": "two_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a choice forced into the open by real, unavoidable friction.",
+    "closing": "What's pushing this decision out of your hands?"
+  },
+  {
+    "card": "two_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a truth coming into view on its own schedule.",
+    "closing": "What's becoming clear without you having to force it?"
+  },
+  {
+    "card": "three_of_swords",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both facing the same hard truth right now, and the {{cardName}} names it directly: something has to end.",
+    "closing": "What illusion are you ready to stop protecting?"
+  },
+  {
+    "card": "three_of_swords",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's airy clarity, and the {{cardName}} shows a separation that's sharp but clean, cutting through what wasn't real.",
+    "closing": "What's clearer now that the illusion has been named?"
+  },
+  {
+    "card": "three_of_swords",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire moves through your {{sun}} Sun's air, and the {{cardName}} shows a hard truth that hurts less than expected because it needed saying.",
+    "closing": "What relief came alongside this particular pain?"
+  },
+  {
+    "card": "three_of_swords",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a separation that reads as loss from here and as clarity from somewhere else.",
+    "closing": "What would this look like if you called it clarity instead of loss?"
+  },
+  {
+    "card": "three_of_swords",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} names a separation that arrived through real, ongoing friction, not a single clean break.",
+    "closing": "What part of this ending is still actively being fought?"
+  },
+  {
+    "card": "three_of_swords",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks a hard truth arriving on its own, without the sky adding weight to it.",
+    "closing": "What illusion has already quietly fallen away?"
+  },
+  {
+    "card": "three_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's air exactly, and the {{cardName}}, reversed, shows a grief that's been circled but never actually faced.",
+    "closing": "What loss are you still not letting yourself fully feel?"
+  },
+  {
+    "card": "three_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's airy nature, and the {{cardName}}, reversed, shows a denial that's easier to maintain than the grief underneath it.",
+    "closing": "What are you telling yourself instead of the harder truth?"
+  },
+  {
+    "card": "three_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire warms your {{sun}} Sun's air, and the {{cardName}}, reversed, shows a grief that's finally starting to loosen its hold.",
+    "closing": "What's softer now than it was when this first happened?"
+  },
+  {
+    "card": "three_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a loss that looks resolved from one side and unresolved from the other.",
+    "closing": "Which side is telling you the truth right now?"
+  },
+  {
+    "card": "three_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a grief that's been fought instead of felt, and the fighting has its own cost.",
+    "closing": "What would it cost less to simply feel than to keep resisting?"
+  },
+  {
+    "card": "three_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a grief that's simply still working itself out.",
+    "closing": "What are you allowed to still be sad about, with no timeline attached?"
+  },
+  {
+    "card": "four_of_swords",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun agree completely right now, and the {{cardName}} says the same thing plainly: rest isn't optional anymore.",
+    "closing": "What would happen if you actually stopped today, no exceptions?"
+  },
+  {
+    "card": "four_of_swords",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's airy need for quiet, and the {{cardName}} shows a mind that's finally allowed to go still.",
+    "closing": "What's the difference between resting and simply stopping?"
+  },
+  {
+    "card": "four_of_swords",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire moves gently through your {{sun}} Sun's air, and the {{cardName}} shows a recovery that comes easily once you finally allow it.",
+    "closing": "What's healing simply because you stopped pushing against it?"
+  },
+  {
+    "card": "four_of_swords",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a body and mind asking for a kind of rest that runs against your usual instincts.",
+    "closing": "What kind of rest would actually work for you, instead of the kind you think you should want?"
+  },
+  {
+    "card": "four_of_swords",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} names an enforced rest that's arriving through real friction with everything you still want to do.",
+    "closing": "What are you resisting the most about slowing down right now?"
+  },
+  {
+    "card": "four_of_swords",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves quietly today, and the {{cardName}} simply marks an ordinary need for rest, nothing dramatic behind it.",
+    "closing": "What small rest have you been putting off for no real reason?"
+  },
+  {
+    "card": "four_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's air exactly, and the {{cardName}}, reversed, shows you back in motion before the rest actually finished its job.",
+    "closing": "What are you doing right now that should still be waiting?"
+  },
+  {
+    "card": "four_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's airy pace, and the {{cardName}}, reversed, shows a return to activity running on a reserve that isn't full yet.",
+    "closing": "What would it cost to rest a little longer before starting again?"
+  },
+  {
+    "card": "four_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire should be warming your {{sun}} Sun's air, but the {{cardName}}, reversed, shows energy spent faster than it was actually restored.",
+    "closing": "What's still owed to your own recovery?"
+  },
+  {
+    "card": "four_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a return to motion that looks like readiness from one side and exhaustion from the other.",
+    "closing": "Which version is actually true for you right now?"
+  },
+  {
+    "card": "four_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows you running on empty specifically because the friction never let the rest finish.",
+    "closing": "What would it take to actually finish resting this time?"
+  },
+  {
+    "card": "four_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a tank that's lower than it looks from outside.",
+    "closing": "What would you do differently today if you admitted how tired you actually are?"
+  },
+  {
+    "card": "five_of_cups",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both feeling the same loss right now, and the {{cardName}} doesn't ask you to look away from it.",
+    "closing": "What are you grieving that deserves to be named plainly?"
+  },
+  {
+    "card": "five_of_cups",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery depth, and the {{cardName}} shows grief that's real without being the whole picture yet.",
+    "closing": "What are you not yet ready to look up and notice?"
+  },
+  {
+    "card": "five_of_cups",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground steadies your {{sun}} Sun's water, and the {{cardName}} shows grief that has somewhere solid to land.",
+    "closing": "What's holding you up while you sit with this loss?"
+  },
+  {
+    "card": "five_of_cups",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a loss that looks total from where you're standing and partial from anywhere else.",
+    "closing": "What would someone standing across from you point out that you're not seeing?"
+  },
+  {
+    "card": "five_of_cups",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} names a grief made heavier by real, active friction around it.",
+    "closing": "What's making this harder than the loss itself already is?"
+  },
+  {
+    "card": "five_of_cups",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks a grief moving through its own quiet season.",
+    "closing": "What are you allowed to still be sad about, without explanation?"
+  },
+  {
+    "card": "five_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's water exactly, and the {{cardName}}, reversed, shows you finally turning from the spilled cups to the ones still standing.",
+    "closing": "What do you still have, now that you've stopped only counting what's gone?"
+  },
+  {
+    "card": "five_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery depth, and the {{cardName}}, reversed, shows sorrow finally starting to loosen on its own timeline.",
+    "closing": "What's easier to carry today than it was last week?"
+  },
+  {
+    "card": "five_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground supports your {{sun}} Sun's water, and the {{cardName}}, reversed, shows a recovery that arrives with real ease.",
+    "closing": "What's helping you move forward without you having to force it?"
+  },
+  {
+    "card": "five_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows what remains looking different depending on which direction you're facing.",
+    "closing": "What still stands, once you turn all the way around?"
+  },
+  {
+    "card": "five_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a reclaiming that still has to push through real resistance to complete.",
+    "closing": "What's the next hard step in moving forward, even if it's not fully comfortable yet?"
+  },
+  {
+    "card": "five_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly marks sorrow easing on its own schedule.",
+    "closing": "What's quietly gotten better without you noticing exactly when?"
+  },
+  {
+    "card": "six_of_cups",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both looking backward right now, and the {{cardName}} shows a memory worth visiting, not just avoiding.",
+    "closing": "What piece of your past is asking for a visit, not a rewrite?"
+  },
+  {
+    "card": "six_of_cups",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery nostalgia, and the {{cardName}} shows a gift from an earlier version of your life arriving right on time.",
+    "closing": "What old memory is offering something you actually need today?"
+  },
+  {
+    "card": "six_of_cups",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground steadies your {{sun}} Sun's water, and the {{cardName}} shows a memory that comforts without pulling you backward.",
+    "closing": "What from your past still feels good to remember, without any ache attached?"
+  },
+  {
+    "card": "six_of_cups",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a memory that means something different to you now than it did then.",
+    "closing": "What does this memory look like from where you're standing today?"
+  },
+  {
+    "card": "six_of_cups",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a nostalgia that comes with a little friction attached — the memory is sweet, but it isn't simple.",
+    "closing": "What's complicated about a memory that's supposed to be purely comforting?"
+  },
+  {
+    "card": "six_of_cups",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks an ordinary, quiet memory surfacing on its own.",
+    "closing": "What small memory showed up today uninvited, and what did it bring with it?"
+  },
+  {
+    "card": "six_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's water exactly, and the {{cardName}}, reversed, shows a past you're holding onto more tightly than it's holding you.",
+    "closing": "What are you keeping alive out of habit rather than love?"
+  },
+  {
+    "card": "six_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery nature, and the {{cardName}}, reversed, shows a memory that's grown softer and rounder than it actually was.",
+    "closing": "What are you remembering better than it actually happened?"
+  },
+  {
+    "card": "six_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground should steady your {{sun}} Sun's water, but the {{cardName}}, reversed, shows a nostalgia that's quietly distorting the present.",
+    "closing": "What would you see clearly if you set the old story down for a moment?"
+  },
+  {
+    "card": "six_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a past that looks golden from here and looked very different while you were living it.",
+    "closing": "What did living through this actually feel like at the time?"
+  },
+  {
+    "card": "six_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a clinging that's creating real friction with where you actually are now.",
+    "closing": "What's the past costing you in the present?"
+  },
+  {
+    "card": "six_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a memory worth loosening your grip on.",
+    "closing": "What are you ready to let be just a memory, instead of a place you still live?"
+  },
+  {
+    "card": "seven_of_cups",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both facing the same wall of options right now, and the {{cardName}} shows how easy it is to mistake possibility for a plan.",
+    "closing": "Which of these options is real, and which is just a nice picture?"
+  },
+  {
+    "card": "seven_of_cups",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery imagination, and the {{cardName}} shows a field of choices that feels exciting but hasn't been tested yet.",
+    "closing": "What would you choose if you had to pick just one, right now?"
+  },
+  {
+    "card": "seven_of_cups",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground steadies your {{sun}} Sun's water, and the {{cardName}} shows imagination that's finally starting to take a real shape.",
+    "closing": "Which vision has enough weight to actually build on?"
+  },
+  {
+    "card": "seven_of_cups",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows options that look completely different depending on which self is choosing.",
+    "closing": "Which version of you is actually the one making this decision?"
+  },
+  {
+    "card": "seven_of_cups",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows an overwhelm made sharper by real friction between what you want and what's realistic.",
+    "closing": "What fantasy is worth testing against reality today?"
+  },
+  {
+    "card": "seven_of_cups",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks a field of options, none of them urgent yet.",
+    "closing": "What daydream deserves a second, more serious look?"
+  },
+  {
+    "card": "seven_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's water exactly, and the {{cardName}}, reversed, shows the fog finally clearing on which option was ever real.",
+    "closing": "Which choice actually has ground under it, now that you can see clearly?"
+  },
+  {
+    "card": "seven_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery imagination, and the {{cardName}}, reversed, shows a vision finally grounded enough to act on.",
+    "closing": "What idea is ready to leave the daydream stage?"
+  },
+  {
+    "card": "seven_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground supports your {{sun}} Sun's water, and the {{cardName}}, reversed, shows clarity arriving with less struggle than expected.",
+    "closing": "What suddenly feels obvious that felt confusing before?"
+  },
+  {
+    "card": "seven_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows an illusion that's obvious from one angle and still convincing from the other.",
+    "closing": "What would you see if you stopped standing where the illusion works best?"
+  },
+  {
+    "card": "seven_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a grounding that's still meeting real resistance before it fully settles.",
+    "closing": "What's the last bit of fog you're still pushing through?"
+  },
+  {
+    "card": "seven_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a vision settling into something real, without any drama attached.",
+    "closing": "What's finally solid enough to commit to?"
+  },
+  {
+    "card": "eight_of_wands",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both moving at full speed right now, and the {{cardName}} shows everything finally lining up fast, all at once.",
+    "closing": "What's moving quickly that you don't need to slow down?"
+  },
+  {
+    "card": "eight_of_wands",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's quick fire, and the {{cardName}} shows momentum arriving faster than you planned for.",
+    "closing": "What's catching up to you sooner than expected, in a good way?"
+  },
+  {
+    "card": "eight_of_wands",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air carries your {{sun}} Sun's fire cleanly, and the {{cardName}} shows swift movement that stays on course without effort.",
+    "closing": "What's moving forward on its own, faster than you're pushing it?"
+  },
+  {
+    "card": "eight_of_wands",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows speed arriving from a direction you weren't watching.",
+    "closing": "What caught you off guard by moving faster than you expected?"
+  },
+  {
+    "card": "eight_of_wands",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows rapid alignment that still has to push through real friction to land.",
+    "closing": "What's speeding up despite the resistance, not because it's gone?"
+  },
+  {
+    "card": "eight_of_wands",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks things moving quickly, on their own schedule.",
+    "closing": "What's arriving faster than you thought it would?"
+  },
+  {
+    "card": "eight_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's fire exactly, and the {{cardName}}, reversed, shows speed that's outrun its own aim — fast, but scattered.",
+    "closing": "What are you moving quickly on without actually aiming it?"
+  },
+  {
+    "card": "eight_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's quick fire, and the {{cardName}}, reversed, shows energy going in too many directions to land anywhere.",
+    "closing": "What would happen if you picked one direction and dropped the rest?"
+  },
+  {
+    "card": "eight_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air should be carrying your {{sun}} Sun's fire cleanly, but the {{cardName}}, reversed, shows a miscalculation that only shows up once you're already moving.",
+    "closing": "What did you not have time to check before you started?"
+  },
+  {
+    "card": "eight_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows scattered energy that looks like progress from one side and chaos from the other.",
+    "closing": "Which read on this is actually closer to true?"
+  },
+  {
+    "card": "eight_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows speed and friction colliding, and neither one winning cleanly.",
+    "closing": "What would slowing down by even a little actually cost you?"
+  },
+  {
+    "card": "eight_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't pushing on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes energy scattered across too many things at once.",
+    "closing": "What's one thing you could put down today to focus on the rest?"
+  },
+  {
+    "card": "nine_of_wands",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both still standing after everything right now, and the {{cardName}} shows exactly how much that's worth.",
+    "closing": "What have you already survived that deserves more credit than you're giving it?"
+  },
+  {
+    "card": "nine_of_wands",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's battle-tested fire, and the {{cardName}} shows a resilience that's earned, not accidental.",
+    "closing": "What did you build the hard way that's holding up right now?"
+  },
+  {
+    "card": "nine_of_wands",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air moves through your {{sun}} Sun's fire, and the {{cardName}} shows one last push that arrives easier than the ones before it.",
+    "closing": "What's the last stretch of something you've already mostly finished?"
+  },
+  {
+    "card": "nine_of_wands",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a guardedness that looks like strength from here and like exhaustion from there.",
+    "closing": "What would it look like to be strong without also being braced for impact?"
+  },
+  {
+    "card": "nine_of_wands",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} names a final push made harder by real, ongoing friction.",
+    "closing": "What's the last bit of resistance standing between you and finishing this?"
+  },
+  {
+    "card": "nine_of_wands",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks quiet resilience — still standing, without needing to prove it.",
+    "closing": "What's still holding up that you've stopped noticing is holding up?"
+  },
+  {
+    "card": "nine_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's fire exactly, and the {{cardName}}, reversed, shows the guard finally dropping — not defeat, just relief.",
+    "closing": "What are you finally allowed to stop bracing for?"
+  },
+  {
+    "card": "nine_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's fire, and the {{cardName}}, reversed, shows a boundary fatigue that's been building for longer than you've admitted.",
+    "closing": "What are you too tired to keep defending?"
+  },
+  {
+    "card": "nine_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air should ease your {{sun}} Sun's fire, but the {{cardName}}, reversed, shows a guard dropped a little too soon, before things fully settled.",
+    "closing": "What still needs a bit more protection before it's safe to relax fully?"
+  },
+  {
+    "card": "nine_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows exhaustion that looks like giving up from one side and like wisdom from the other.",
+    "closing": "Is this actually surrender, or is it just rest?"
+  },
+  {
+    "card": "nine_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a fatigue that's compounded by real, unresolved friction.",
+    "closing": "What are you still fighting that's actually already over?"
+  },
+  {
+    "card": "nine_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a guard coming down on its own, without incident.",
+    "closing": "What are you letting yourself stop watching so closely?"
+  },
+  {
+    "card": "ten_of_wands",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both carrying the same load right now, and the {{cardName}} names it honestly: this is a lot, and you've been carrying all of it.",
+    "closing": "What are you still carrying that was never yours alone to hold?"
+  },
+  {
+    "card": "ten_of_wands",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's fiery drive, and the {{cardName}} shows duty that's genuinely heavy, not just dramatized.",
+    "closing": "What responsibility have you taken on without ever questioning whether it's yours?"
+  },
+  {
+    "card": "ten_of_wands",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air moves through your {{sun}} Sun's fire, and the {{cardName}} shows a burden that, while real, has some give in it yet.",
+    "closing": "What part of this load could actually be set down, if you let it?"
+  },
+  {
+    "card": "ten_of_wands",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a burden that looks necessary from here and optional from somewhere else.",
+    "closing": "What would someone standing across from you say you could actually put down?"
+  },
+  {
+    "card": "ten_of_wands",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} names an overextension that's compounding real friction, not just weight.",
+    "closing": "What's the actual breaking point you're approaching?"
+  },
+  {
+    "card": "ten_of_wands",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks an ordinary heaviness, worth acknowledging without drama.",
+    "closing": "What's quietly heavy today that you haven't said out loud?"
+  },
+  {
+    "card": "ten_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's fire exactly, and the {{cardName}}, reversed, shows the load finally being set down, whether by choice or by collapse.",
+    "closing": "What are you finally ready to put down?"
+  },
+  {
+    "card": "ten_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's fiery drive, and the {{cardName}}, reversed, shows delegation finally becoming possible, not a failure.",
+    "closing": "What could you hand to someone else without the outcome actually suffering?"
+  },
+  {
+    "card": "ten_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s air eases your {{sun}} Sun's fire, and the {{cardName}}, reversed, shows relief arriving with less resistance than expected.",
+    "closing": "What got lighter the moment you asked for help?"
+  },
+  {
+    "card": "ten_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a collapse that reads as failure from here and as overdue relief from the other side.",
+    "closing": "What would it look like to see this as relief instead of defeat?"
+  },
+  {
+    "card": "ten_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a releasing that still has to push through real resistance before it feels okay.",
+    "closing": "What are you still guilty about letting go of?"
+  },
+  {
+    "card": "ten_of_wands",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a load lightening on its own, without a dramatic moment behind it.",
+    "closing": "What's simply gotten easier without you having to fight for it?"
+  },
+  {
+    "card": "two_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both juggling the same set of demands right now, and the {{cardName}} shows you keeping every ball in the air, on purpose.",
+    "closing": "What are you balancing right now that's actually going fine?"
+  },
+  {
+    "card": "two_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded adaptability, and the {{cardName}} shows a balance that shifts easily as things change.",
+    "closing": "What are you adjusting to smoothly, without much friction?"
+  },
+  {
+    "card": "two_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current moves through your {{sun}} Sun's earth, and the {{cardName}} shows a juggling act that feels almost playful rather than stressful.",
+    "closing": "What's demanding but still enjoyable to keep in motion?"
+  },
+  {
+    "card": "two_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a balance held between two priorities that pull in genuinely different directions.",
+    "closing": "What two things are you keeping in balance that don't naturally want to coexist?"
+  },
+  {
+    "card": "two_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows an adaptation that's real but takes active, constant effort to maintain.",
+    "closing": "What are you actively working to keep steady right now?"
+  },
+  {
+    "card": "two_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks an ordinary juggling act, handled without much fuss.",
+    "closing": "What are you keeping in motion that you rarely get credit for?"
+  },
+  {
+    "card": "two_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's earth exactly, and the {{cardName}}, reversed, shows a juggling act that's finally dropped something.",
+    "closing": "What fell that you're now having to pick back up?"
+  },
+  {
+    "card": "two_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded nature, and the {{cardName}}, reversed, shows adaptability finally running out of room to keep flexing.",
+    "closing": "What's one thing you could stop trying to accommodate?"
+  },
+  {
+    "card": "two_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current should ease your {{sun}} Sun's earth, but the {{cardName}}, reversed, shows a balance that's quietly slipped without anyone noticing yet.",
+    "closing": "What's been off-balance for longer than you've admitted?"
+  },
+  {
+    "card": "two_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a dropped responsibility that looks careless from one side and inevitable from the other.",
+    "closing": "Was this actually avoidable, or was something always going to give?"
+  },
+  {
+    "card": "two_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a chaos that built up through real, ongoing friction, not a single mistake.",
+    "closing": "What's actually too much to keep juggling at once?"
+  },
+  {
+    "card": "two_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a balance that's slipping without any real cause behind it.",
+    "closing": "What could you simplify today instead of trying to hold it all?"
+  },
+  {
+    "card": "three_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both building toward the same design right now, and the {{cardName}} shows collaboration that's actually working.",
+    "closing": "What are you building with others that's better than you could build alone?"
+  },
+  {
+    "card": "three_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded craft, and the {{cardName}} shows skill recognized by people who actually know what they're looking at.",
+    "closing": "Whose recognition of your work actually means something to you?"
+  },
+  {
+    "card": "three_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current moves through your {{sun}} Sun's earth, and the {{cardName}} shows a team finding its rhythm without much friction.",
+    "closing": "What's clicking between you and your collaborators right now?"
+  },
+  {
+    "card": "three_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a design coming together from two very different sets of hands.",
+    "closing": "What does someone else's very different approach add to this project?"
+  },
+  {
+    "card": "three_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a masterful result that still took real friction between collaborators to reach.",
+    "closing": "What disagreement actually made the final work stronger?"
+  },
+  {
+    "card": "three_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks steady, competent teamwork, without needing applause.",
+    "closing": "What quiet collaboration deserves more credit than it's getting?"
+  },
+  {
+    "card": "three_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's earth exactly, and the {{cardName}}, reversed, shows a team pulling in different directions on the same project.",
+    "closing": "What's misaligned between you and your collaborators that needs saying out loud?"
+  },
+  {
+    "card": "three_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded nature, and the {{cardName}}, reversed, shows a blueprint that looked solid on paper but doesn't hold up in practice.",
+    "closing": "What part of the plan needs to be redrawn?"
+  },
+  {
+    "card": "three_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current should ease your {{sun}} Sun's earth, but the {{cardName}}, reversed, shows teamwork that's quietly come apart without a clear moment where it happened.",
+    "closing": "When did this collaboration stop actually collaborating?"
+  },
+  {
+    "card": "three_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a misalignment that looks like someone else's fault from here and looks mutual from the other side.",
+    "closing": "What's your actual part in this not working?"
+  },
+  {
+    "card": "three_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a poor teamwork made worse by real, unresolved friction underneath it.",
+    "closing": "What conversation is overdue with the people you're building this with?"
+  },
+  {
+    "card": "three_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a plan that's drifted slightly out of alignment.",
+    "closing": "What small correction now would save a bigger fix later?"
+  },
+  {
+    "card": "four_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both holding tight to the same thing right now, and the {{cardName}} shows control that's actually protecting something real.",
+    "closing": "What are you guarding that genuinely deserves the protection?"
+  },
+  {
+    "card": "four_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded caution, and the {{cardName}} shows reserves being protected sensibly, not fearfully.",
+    "closing": "What are you saving on purpose, with a clear reason behind it?"
+  },
+  {
+    "card": "four_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current moves through your {{sun}} Sun's earth, and the {{cardName}} shows financial control that feels secure rather than restrictive.",
+    "closing": "What boundary around your resources actually feels good to hold?"
+  },
+  {
+    "card": "four_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a caution that looks different depending on whether you're the one holding the reserves or asking for them.",
+    "closing": "What does this look like from the other person's side of the table?"
+  },
+  {
+    "card": "four_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a protectiveness that's creating real friction with the people around you.",
+    "closing": "What would it cost to loosen your grip, even slightly?"
+  },
+  {
+    "card": "four_of_pentacles",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks an ordinary caution about what you have, nothing extreme about it.",
+    "closing": "What's a reasonable amount to keep in reserve right now?"
+  },
+  {
+    "card": "four_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's earth exactly, and the {{cardName}}, reversed, shows a grip that's tightened past the point of protecting anything.",
+    "closing": "What are you holding onto so tightly it's starting to hurt you instead?"
+  },
+  {
+    "card": "four_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's grounded nature, and the {{cardName}}, reversed, shows caution that's actually fear wearing a more respectable name.",
+    "closing": "What are you calling careful that's actually just afraid?"
+  },
+  {
+    "card": "four_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s current should ease your {{sun}} Sun's earth, but the {{cardName}}, reversed, shows a control that's tightening even though nothing's actually threatening it.",
+    "closing": "What would happen if you loosened your grip on something that's actually safe?"
+  },
+  {
+    "card": "four_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a fear that looks like prudence from here and looks like scarcity thinking from the other side.",
+    "closing": "Which read on your own caution is actually true?"
+  },
+  {
+    "card": "four_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a holding-on made worse by real, active friction with the people around you.",
+    "closing": "What's the actual cost of holding this so tightly?"
+  },
+  {
+    "card": "four_of_pentacles",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a grip that could loosen without anything bad happening.",
+    "closing": "What's safe to let go of a little, starting today?"
+  },
+  {
+    "card": "five_of_swords",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both standing in the same aftermath right now, and the {{cardName}} asks whether this win was actually worth having.",
+    "closing": "What did you win that you're not sure you wanted anymore?"
+  },
+  {
+    "card": "five_of_swords",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's sharp air, and the {{cardName}} shows a conflict where being right cost more than it gained.",
+    "closing": "What did being right actually cost you here?"
+  },
+  {
+    "card": "five_of_swords",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire moves through your {{sun}} Sun's air, and the {{cardName}} shows a conflict you can actually walk away from with less damage than expected.",
+    "closing": "What would it look like to step back from this one?"
+  },
+  {
+    "card": "five_of_swords",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a conflict that looks like victory from here and like loss from the other side.",
+    "closing": "What does the other person walk away from this thinking?"
+  },
+  {
+    "card": "five_of_swords",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} names a conflict with no real winner, made sharper by real friction underneath it.",
+    "closing": "What's this argument actually about, underneath the argument?"
+  },
+  {
+    "card": "five_of_swords",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks a conflict not worth escalating any further today.",
+    "closing": "What disagreement is fine to just let go of?"
+  },
+  {
+    "card": "five_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's air exactly, and the {{cardName}}, reversed, shows a resolution that looks settled but leaves nothing actually resolved.",
+    "closing": "What's still unfinished under the surface of this so-called resolution?"
+  },
+  {
+    "card": "five_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's sharp air, and the {{cardName}}, reversed, shows a victory whose real cost is only becoming clear now.",
+    "closing": "What did winning actually take from you, in the long run?"
+  },
+  {
+    "card": "five_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire warms your {{sun}} Sun's air, and the {{cardName}}, reversed, shows a repair that comes easier than the conflict that caused it.",
+    "closing": "What's mending faster than you expected after this?"
+  },
+  {
+    "card": "five_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a cost that's obvious from one side and invisible from the other.",
+    "closing": "Who's actually paying for this, that you haven't noticed?"
+  },
+  {
+    "card": "five_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a long-term cost compounded by real, ongoing friction.",
+    "closing": "What would it take to actually make peace with this, not just move past it?"
+  },
+  {
+    "card": "five_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a resolution that never quite settled.",
+    "closing": "What conversation would actually close this out for good?"
+  },
+  {
+    "card": "six_of_swords",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both heading toward calmer waters right now, and the {{cardName}} confirms it: you're moving in the right direction.",
+    "closing": "What's actually getting easier the further you move from where you started?"
+  },
+  {
+    "card": "six_of_swords",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's airy clarity, and the {{cardName}} shows a transition that's slow but genuinely moving.",
+    "closing": "What's quietly improving, even if it doesn't feel finished yet?"
+  },
+  {
+    "card": "six_of_swords",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire moves through your {{sun}} Sun's air, and the {{cardName}} shows a passage that's smoother than the waters you're leaving behind.",
+    "closing": "What's easier about where you're headed than where you've been?"
+  },
+  {
+    "card": "six_of_swords",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a passage toward a shore that looks nothing like the one you're used to.",
+    "closing": "What does the far shore actually look like, now that you can see it?"
+  },
+  {
+    "card": "six_of_swords",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a transition that's real but still crossing choppy water to get there.",
+    "closing": "What's still rough about this crossing, even though it's working?"
+  },
+  {
+    "card": "six_of_swords",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks a quiet, steady movement toward something better.",
+    "closing": "What's getting a little better every day, without any fanfare?"
+  },
+  {
+    "card": "six_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's air exactly, and the {{cardName}}, reversed, shows a transition stuck mid-crossing, unable to move forward or back.",
+    "closing": "What's keeping you from finishing this move, in either direction?"
+  },
+  {
+    "card": "six_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's airy nature, and the {{cardName}}, reversed, shows baggage that's slowing the crossing down more than the distance itself.",
+    "closing": "What are you carrying that's heavier than the journey requires?"
+  },
+  {
+    "card": "six_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire should be warming your {{sun}} Sun's air, but the {{cardName}}, reversed, shows movement that's stalling despite conditions being mostly favorable.",
+    "closing": "What's actually holding this up, if the conditions are fine?"
+  },
+  {
+    "card": "six_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a stuck transition that looks like caution from one side and like avoidance from the other.",
+    "closing": "Which is it, really — caution, or avoidance?"
+  },
+  {
+    "card": "six_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a transition stalled by real, active resistance, not just hesitation.",
+    "closing": "What's actively working against this move forward?"
+  },
+  {
+    "card": "six_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a stuck feeling with no urgent cause behind it.",
+    "closing": "What small step would get this moving again?"
+  },
+  {
+    "card": "seven_of_swords",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both working the same quiet angle right now, and the {{cardName}} shows an advantage you've earned without needing to announce it.",
+    "closing": "What quiet advantage are you holding that doesn't need to be shown off?"
+  },
+  {
+    "card": "seven_of_swords",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's clever air, and the {{cardName}} shows a workaround that's efficient, if a little unconventional.",
+    "closing": "What clever shortcut have you found that actually works?"
+  },
+  {
+    "card": "seven_of_swords",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire moves through your {{sun}} Sun's air, and the {{cardName}} shows a way around the obstacle that costs surprisingly little.",
+    "closing": "What's an easier path around this than the one everyone else is taking?"
+  },
+  {
+    "card": "seven_of_swords",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows an advantage that looks clever from here and looks like something else entirely from the other side.",
+    "closing": "How would this look if someone else described it back to you?"
+  },
+  {
+    "card": "seven_of_swords",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a workaround that's real but still requires real, ongoing effort to maintain.",
+    "closing": "What's this shortcut actually costing you to keep up?"
+  },
+  {
+    "card": "seven_of_swords",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks a quiet, ordinary bit of cleverness, nothing worth overthinking.",
+    "closing": "What small workaround are you using that's simply practical?"
+  },
+  {
+    "card": "seven_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's air exactly, and the {{cardName}}, reversed, shows a plan that's coming apart right as the truth surfaces.",
+    "closing": "What's about to come to light that you've been managing around?"
+  },
+  {
+    "card": "seven_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's clever air, and the {{cardName}}, reversed, shows a workaround that's finally being seen for what it actually was.",
+    "closing": "What shortcut is it time to admit you took?"
+  },
+  {
+    "card": "seven_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s fire warms your {{sun}} Sun's air, and the {{cardName}}, reversed, shows the truth coming out with less fallout than you feared.",
+    "closing": "What's easier now that it's out in the open?"
+  },
+  {
+    "card": "seven_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a truth that looks damaging from here and looks like relief from the other side.",
+    "closing": "What would it feel like if this unraveling was actually good news?"
+  },
+  {
+    "card": "seven_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a plan unraveling under real, active pressure, not on its own.",
+    "closing": "What's forcing this out into the open right now?"
+  },
+  {
+    "card": "seven_of_swords",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a truth surfacing on its own, without urgency behind it.",
+    "closing": "What's becoming clear at its own natural pace?"
+  },
+  {
+    "card": "eight_of_cups",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun both know it's time to go right now, and the {{cardName}} shows you walking away from something that once mattered, on your own terms.",
+    "closing": "What are you finally ready to walk away from, clearly and on purpose?"
+  },
+  {
+    "card": "eight_of_cups",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery depth, and the {{cardName}} shows a departure that's quiet, not dramatic — just done.",
+    "closing": "What have you already stopped needing, even if you haven't said so?"
+  },
+  {
+    "card": "eight_of_cups",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground steadies your {{sun}} Sun's water, and the {{cardName}} shows a walking-away that feels supported, not lonely.",
+    "closing": "What's helping this departure feel less like a loss and more like a choice?"
+  },
+  {
+    "card": "eight_of_cups",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a departure that looks like giving up from one side and like clarity from the other.",
+    "closing": "Which version of this story is actually true for you?"
+  },
+  {
+    "card": "eight_of_cups",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a conscious departure that still comes with real, active friction attached.",
+    "closing": "What's making this harder to leave than it should be?"
+  },
+  {
+    "card": "eight_of_cups",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks a quiet departure, made without drama.",
+    "closing": "What are you ready to leave behind without needing a reason for anyone else?"
+  },
+  {
+    "card": "eight_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's water exactly, and the {{cardName}}, reversed, shows a reluctance to leave something that stopped serving you a while ago.",
+    "closing": "What are you staying in only because leaving feels scarier than staying?"
+  },
+  {
+    "card": "eight_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery depth, and the {{cardName}}, reversed, shows a safety net you've outgrown but haven't let go of.",
+    "closing": "What's familiar but no longer actually good for you?"
+  },
+  {
+    "card": "eight_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground should support your {{sun}} Sun's water, but the {{cardName}}, reversed, shows comfort that's become the thing keeping you stuck.",
+    "closing": "What comfort is actually costing you more than it's giving?"
+  },
+  {
+    "card": "eight_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a staying-put that looks wise from here and looks like avoidance from the other side.",
+    "closing": "Which is it, really — patience, or fear dressed as patience?"
+  },
+  {
+    "card": "eight_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a reluctance made heavier by real, ongoing friction with staying.",
+    "closing": "What's it actually costing you to keep waiting?"
+  },
+  {
+    "card": "eight_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a safety that's overstayed its welcome.",
+    "closing": "What would it take to admit this stopped working a while ago?"
+  },
+  {
+    "card": "nine_of_cups",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both fully satisfied right now, and the {{cardName}} shows a wish actually fulfilled, not just imagined.",
+    "closing": "What have you gotten exactly what you wanted, and are you letting yourself enjoy it?"
+  },
+  {
+    "card": "nine_of_cups",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery contentment, and the {{cardName}} shows an abundance that's quiet and self-contained, not showy.",
+    "closing": "What's genuinely enough, without needing anyone else's approval of it?"
+  },
+  {
+    "card": "nine_of_cups",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground steadies your {{sun}} Sun's water, and the {{cardName}} shows satisfaction that feels earned and solid, not fleeting.",
+    "closing": "What good thing in your life are you actually letting yourself feel proud of?"
+  },
+  {
+    "card": "nine_of_cups",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a satisfaction that looks different depending on whose definition of success you're using.",
+    "closing": "Whose idea of a good life are you actually living right now — yours, or someone else's?"
+  },
+  {
+    "card": "nine_of_cups",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a wish fulfilled that still came with real friction to reach.",
+    "closing": "What did this satisfaction actually cost you to earn?"
+  },
+  {
+    "card": "nine_of_cups",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks an ordinary contentment, worth noticing without needing a reason.",
+    "closing": "What small thing today is quietly, simply enough?"
+  },
+  {
+    "card": "nine_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's water exactly, and the {{cardName}}, reversed, shows a success that somehow still doesn't feel like enough.",
+    "closing": "What did you get that you thought would satisfy you, and didn't?"
+  },
+  {
+    "card": "nine_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery nature, and the {{cardName}}, reversed, shows overindulgence standing in for a satisfaction that isn't actually there.",
+    "closing": "What are you reaching for more of because the first amount didn't fill the gap?"
+  },
+  {
+    "card": "nine_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground should support your {{sun}} Sun's water, but the {{cardName}}, reversed, shows a dissatisfaction that's quiet, not dramatic, but still real.",
+    "closing": "What's missing that success alone was never going to provide?"
+  },
+  {
+    "card": "nine_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a life that looks enviable from here and looks hollow from the inside.",
+    "closing": "What would you tell someone who envies this, if you were honest?"
+  },
+  {
+    "card": "nine_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a dissatisfaction compounded by real, ongoing friction underneath the success.",
+    "closing": "What's actually unresolved beneath the version of success you're presenting?"
+  },
+  {
+    "card": "nine_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "Nothing in the sky is pulling on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a satisfaction that's thinner than it appears.",
+    "closing": "What would actually satisfy you, if you let yourself name it honestly?"
+  },
+  {
+    "card": "ten_of_cups",
+    "orientation": "upright",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} and your {{sun}} Sun are both settled into the same warmth right now, and the {{cardName}} shows a harmony that's real, not performed.",
+    "closing": "What relationship in your life right now feels simply, fully good?"
+  },
+  {
+    "card": "ten_of_cups",
+    "orientation": "upright",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery warmth, and the {{cardName}} shows an emotional legacy that's quietly being carried forward.",
+    "closing": "What did the people who raised you give you that you're passing on now?"
+  },
+  {
+    "card": "ten_of_cups",
+    "orientation": "upright",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground steadies your {{sun}} Sun's water, and the {{cardName}} shows a family harmony that feels stable, not fragile.",
+    "closing": "What bond are you allowed to simply trust, without checking on it constantly?"
+  },
+  {
+    "card": "ten_of_cups",
+    "orientation": "upright",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} stands opposite your {{sun}} Sun, and the {{cardName}} shows a family harmony built by people whose ways of loving look nothing alike.",
+    "closing": "What does it look like to love people well, even when your styles don't match?"
+  },
+  {
+    "card": "ten_of_cups",
+    "orientation": "upright",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}} shows a family harmony that took real, ongoing effort to build, not something automatic.",
+    "closing": "What did you have to work through to get to this peace?"
+  },
+  {
+    "card": "ten_of_cups",
+    "orientation": "upright",
+    "relationshipType": "neutral",
+    "synthesis": "{{anchorPlanet}} moves on its own path today, and the {{cardName}} simply marks an ordinary warmth at home, worth noticing without needing a special occasion.",
+    "closing": "What quiet family moment deserves more appreciation than it gets?"
+  },
+  {
+    "card": "ten_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "amplification",
+    "synthesis": "{{currentSeason}} matches your {{sun}} Sun's water exactly, and the {{cardName}}, reversed, shows a bond that looks whole from outside but has real fractures underneath.",
+    "closing": "What's cracked in this relationship that no one's said out loud yet?"
+  },
+  {
+    "card": "ten_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "resonance",
+    "synthesis": "{{currentSeason}} shares your {{sun}} Sun's watery nature, and the {{cardName}}, reversed, shows a harmony that's been performed for so long it's hard to tell what's real.",
+    "closing": "What would this family actually look like without the performance?"
+  },
+  {
+    "card": "ten_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "harmony",
+    "synthesis": "{{currentSeason}}'s ground should steady your {{sun}} Sun's water, but the {{cardName}}, reversed, shows an illusion of harmony that's easier to keep than to question.",
+    "closing": "What would it cost to ask the question everyone's avoiding?"
+  },
+  {
+    "card": "ten_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "polarity",
+    "synthesis": "{{currentSeason}} opposes your {{sun}} Sun, and the {{cardName}}, reversed, shows a fracture that looks minor from here and looks fundamental from the other side.",
+    "closing": "Whose account of this family is actually closer to the truth?"
+  },
+  {
+    "card": "ten_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "tension",
+    "synthesis": "{{currentSeason}} squares your {{sun}} Sun, and the {{cardName}}, reversed, shows a fractured bond made worse by real, unresolved friction.",
+    "closing": "What conversation has been overdue in this relationship for a long time?"
+  },
+  {
+    "card": "ten_of_cups",
+    "orientation": "reversed",
+    "relationshipType": "neutral",
+    "synthesis": "The sky isn't leaning on your {{sun}} Sun today, and the {{cardName}}, reversed, quietly notes a harmony that's more habit than feeling right now.",
+    "closing": "What would it take to make this connection feel real again, not just routine?"
+  }
+]
