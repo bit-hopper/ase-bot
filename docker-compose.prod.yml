@@ -1,0 +1,64 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ase
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: ase
+    volumes:
+      - ase_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ase -d ase"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    volumes:
+      - ase_redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  app:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      # Topology-determined, not secrets — fixed by running all three services in this same
+      # compose network, so they don't need to live in .env alongside the real secrets.
+      DATABASE_URL: postgresql://ase:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}@postgres:5432/ase
+      REDIS_URL: redis://redis:6379
+      SWEPH_PATH: /app/ephe
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+# Deliberately no host port mappings on postgres/redis (unlike the dev-only docker-compose.yml,
+# which maps 5432/6379 to localhost for local tooling) — nothing outside this compose network
+# needs to reach them directly.
+volumes:
+  ase_postgres_data:
+  ase_redis_data:

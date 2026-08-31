@@ -119,6 +119,13 @@ npm run verify-ephemeris   # confirms the files are actually loadable before you
 These files aren't committed to the repo (binary, third-party licensed data — see `.gitignore`);
 CI fetches them fresh in the same way (see `.github/workflows/ci.yml`).
 
+## Deploying
+
+For running the bot on a real server rather than a dev machine: a single EC2 instance running
+Docker Compose (Postgres + Redis + the app itself) is the whole setup — see
+[`deploy/DEPLOY.md`](deploy/DEPLOY.md) for the full runbook, `Dockerfile` for the app image, and
+`docker-compose.prod.yml` for the production compose stack.
+
 ## License
 
 AGPL-3.0-or-later — see [`LICENSE`](LICENSE).
