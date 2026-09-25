@@ -21,7 +21,7 @@ function formatDuration(hours: number): string {
 }
 
 /** Illumination % + countdown to a notable phase's exact instant, relative to `now` — e.g.
- *  "98%, 1d 10h until", "94%, 1d 10h since", or "100%, today" on the same UTC calendar date. */
+ *  "98%, 1d 10h to go", "94%, 1d 10h ago", or "100%, today" on the same UTC calendar date. */
 function formatPhaseDetail(now: Date, phase: NotableMoonPhase, elongation: number, calcFlags: number | undefined): string {
   const { event, direction } = findNearestExactMoonPhase(dateToJulianDayUT(now), phase, calcFlags);
   const pct = Math.round(moonIllumination(elongation));
@@ -30,8 +30,7 @@ function formatPhaseDetail(now: Date, phase: NotableMoonPhase, elongation: numbe
 
   const hours = Math.abs(event.date.getTime() - now.getTime()) / (1000 * 60 * 60);
   const duration = formatDuration(hours);
-  const directionWord = direction === "upcoming" ? "until" : "since";
-  return `${pct}%, ${duration} ${directionWord}`;
+  return direction === "upcoming" ? `${pct}%, ${duration} to go` : `${pct}%, ${duration} ago`;
 }
 
 /** §4.1/§10.5 */

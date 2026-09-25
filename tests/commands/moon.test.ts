@@ -29,16 +29,16 @@ describe("handleMoon (§10.5)", () => {
     expect(reply).toMatch(/Full Moon \(\d+%, today\)/);
   });
 
-  it("appends '<pct>%, ... until' for a notable phase still approaching its exact instant", async () => {
+  it("appends '<pct>%, ... to go' for a notable phase still approaching its exact instant", async () => {
     const approachingCtx = { ...ctx, now: new Date("2026-08-27T20:00:00Z") }; // ~8h before, previous UTC day
     const [reply] = await handleMoon(approachingCtx);
-    expect(reply).toMatch(/Full Moon \(\d+%, \d+h until\)/);
+    expect(reply).toMatch(/Full Moon \(\d+%, \d+h to go\)/);
   });
 
-  it("appends '<pct>%, ... since' for a notable phase whose exact instant already passed", async () => {
+  it("appends '<pct>%, ... ago' for a notable phase whose exact instant already passed", async () => {
     const pastCtx = { ...ctx, now: new Date("2026-08-30T00:00:00Z") }; // ~2 days after that full moon
     const [reply] = await handleMoon(pastCtx);
-    expect(reply).toMatch(/Full Moon \(\d+%, \d+d \d+h since\)/);
+    expect(reply).toMatch(/Full Moon \(\d+%, \d+d \d+h ago\)/);
   });
 
   it("does not append a phase-detail readout for a non-notable phase", async () => {
