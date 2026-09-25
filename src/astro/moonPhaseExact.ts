@@ -23,6 +23,9 @@ export interface MoonPhaseExactEvent {
   date: Date;
 }
 
+const STEP_DAYS = 1;
+const ONE_MINUTE_IN_DAYS = 1 / (24 * 60);
+
 function elongationAtJd(jdUt: number, flags: number): number {
   const sun = computePlanetPosition(jdUt, "sun", flags);
   const moon = computePlanetPosition(jdUt, "moon", flags);
@@ -32,6 +35,18 @@ function elongationAtJd(jdUt: number, flags: number): number {
 /** Signed distance of `elongation` from `target`, wrapped to (-180, 180]. */
 function signedDiff(elongation: number, target: number): number {
   return (((elongation - target + 180) % 360) + 360) % 360 - 180;
+}
+
+/** Bisects [loJd, hiJd] — where diff(lo) < 0 and diff(hi) >= 0 — down to the minute. */
+function bisectCrossing(loJd: number, hiJd: number, target: number, flags: number): number {
+  let lo = loJd;
+  let hi = hiJd;
+  while (hi - lo > ONE_MINUTE_IN_DAYS) {
+    const mid = (lo + hi) / 2;
+    if (signedDiff(elongationAtJd(mid, flags), target) < 0) lo = mid;
+    else hi = mid;
+  }
+  return hi;
 }
 
 /**
@@ -48,34 +63,76 @@ export function findNextExactMoonPhase(
   flags: number = DEFAULT_CALC_FLAGS,
 ): MoonPhaseExactEvent {
   const target = TARGET_ELONGATION[phase];
-  const STEP_DAYS = 1;
-  const ONE_MINUTE_IN_DAYS = 1 / (24 * 60);
-
   let prevJd = fromJdUt;
   let prevDiff = signedDiff(elongationAtJd(prevJd, flags), target);
-  let bracket: { lo: number; hi: number } | null = null;
 
   for (let i = 1; i <= 40; i++) {
     const jd = fromJdUt + i * STEP_DAYS;
     const diff = signedDiff(elongationAtJd(jd, flags), target);
     if (prevDiff < 0 && diff >= 0) {
-      bracket = { lo: prevJd, hi: jd };
-      break;
+      const jdUt = bisectCrossing(prevJd, jd, target, flags);
+      return { phase, jdUt, date: julianDayToDate(jdUt) };
     }
     prevJd = jd;
     prevDiff = diff;
   }
 
-  if (!bracket) {
-    throw new Error(`findNextExactMoonPhase: no ${phase} found within 40 days of JD ${fromJdUt}`);
+  throw new Error(`findNextExactMoonPhase: no ${phase} found within 40 days of JD ${fromJdUt}`);
+}
+
+/**
+ * Backward search from fromJdUt for the exact instant Sun-Moon elongation most recently crossed
+ * the given phase's target degree — the mirror of findNextExactMoonPhase. Needed when fromJdUt
+ * falls just after a phase's exact instant (e.g. /moon still showing "Full Moon" while waning
+ * back out of the display band): the *next* occurrence of that same phase is nearly a full
+ * 29.53-day cycle away, but the *previous* one — the one /moon should actually report a
+ * countdown against — is close behind.
+ */
+export function findPreviousExactMoonPhase(
+  fromJdUt: number,
+  phase: NotableMoonPhase,
+  flags: number = DEFAULT_CALC_FLAGS,
+): MoonPhaseExactEvent {
+  const target = TARGET_ELONGATION[phase];
+  let laterJd = fromJdUt;
+  let laterDiff = signedDiff(elongationAtJd(laterJd, flags), target);
+
+  for (let i = 1; i <= 40; i++) {
+    const jd = fromJdUt - i * STEP_DAYS;
+    const diff = signedDiff(elongationAtJd(jd, flags), target);
+    if (diff < 0 && laterDiff >= 0) {
+      const jdUt = bisectCrossing(jd, laterJd, target, flags);
+      return { phase, jdUt, date: julianDayToDate(jdUt) };
+    }
+    laterJd = jd;
+    laterDiff = diff;
   }
 
-  let { lo, hi } = bracket;
-  while (hi - lo > ONE_MINUTE_IN_DAYS) {
-    const mid = (lo + hi) / 2;
-    if (signedDiff(elongationAtJd(mid, flags), target) < 0) lo = mid;
-    else hi = mid;
-  }
+  throw new Error(`findPreviousExactMoonPhase: no ${phase} found within 40 days before JD ${fromJdUt}`);
+}
 
-  return { phase, jdUt: hi, date: julianDayToDate(hi) };
+export interface NearestMoonPhaseResult {
+  event: MoonPhaseExactEvent;
+  /** "upcoming" if nowJdUt is still approaching the exact instant, "past" if it's already crossed. */
+  direction: "upcoming" | "past";
+}
+
+/**
+ * For a phase whose current elongation already sits inside its display band (moonPhase.ts's
+ * 45deg bucket), finds whichever neighboring exact instant — the one just passed, or the one
+ * about to arrive — is the relevant one to report a countdown against. Not necessarily the
+ * chronologically next one: once the exact instant has passed, the next occurrence of the same
+ * phase is a full cycle away, which is the wrong thing to show next to "Full Moon" today.
+ */
+export function findNearestExactMoonPhase(
+  nowJdUt: number,
+  phase: NotableMoonPhase,
+  flags: number = DEFAULT_CALC_FLAGS,
+): NearestMoonPhaseResult {
+  const target = TARGET_ELONGATION[phase];
+  const diff = signedDiff(elongationAtJd(nowJdUt, flags), target);
+
+  return diff < 0
+    ? { event: findNextExactMoonPhase(nowJdUt, phase, flags), direction: "upcoming" }
+    : { event: findPreviousExactMoonPhase(nowJdUt, phase, flags), direction: "past" };
 }
