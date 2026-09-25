@@ -1,3 +1,4 @@
+import { ZODIAC_SIGNS } from "../data/types.js";
 import { pickWhimsyFragments, type WhimsyFragments } from "./composeWhimsyPost.js";
 import type { WhimsyPostLogRow } from "./whimsyPostLog.js";
 
@@ -5,13 +6,17 @@ import type { WhimsyPostLogRow } from "./whimsyPostLog.js";
 const EXACT_COMBO_LOOKBACK = 50;
 /** §2 round 2: reject reusing the same directive or punchline (any sign) within the last ~10 posts. */
 const FRAGMENT_LOOKBACK = 10;
+/** Reject a sign seen anywhere in the last (12 - 1) posts, so every other sign has to come up
+ *  before one repeats — a full, randomly-ordered cycle through all 12 rather than just no
+ *  back-to-back repeat. */
+const SIGN_CYCLE_LOOKBACK = ZODIAC_SIGNS.length - 1;
 /** Defensive bound on selectUniqueWhimsyFragments's retry loop — see its own comment. */
 const MAX_ATTEMPTS = 200;
 
 /** `recentPosts` must be newest-first (as returned by getRecentWhimsyPosts). */
 export function isWhimsyPostAllowed(candidate: WhimsyFragments, recentPosts: readonly WhimsyPostLogRow[]): boolean {
-  const lastPost = recentPosts[0];
-  if (lastPost && lastPost.sign === candidate.sign) return false; // never repeat the immediately-preceding sign
+  const signWindow = recentPosts.slice(0, SIGN_CYCLE_LOOKBACK);
+  if (signWindow.some((p) => p.sign === candidate.sign)) return false; // must cycle through every other sign first
 
   const fragmentWindow = recentPosts.slice(0, FRAGMENT_LOOKBACK);
   if (fragmentWindow.some((p) => p.directive === candidate.directive)) return false;
@@ -28,10 +33,10 @@ export function isWhimsyPostAllowed(candidate: WhimsyFragments, recentPosts: rea
 
 /**
  * Repeatedly draws candidates via pickWhimsyFragments until one clears every repeat-avoidance
- * rule against `recentPosts`. MAX_ATTEMPTS is a defensive bound, not an expected case — with
- * pools this size (217 directives, 80 punchlines) a valid candidate is found within a handful of
- * draws in practice; the bound only guards against a future pool shrinking enough to make this a
- * real infinite loop.
+ * rule against `recentPosts`. MAX_ATTEMPTS is a defensive bound, not an expected case — even at
+ * the sign check's worst case (11 of 12 signs excluded, a 1-in-12 chance per draw), a valid
+ * candidate is found within ~12 draws on average; 200 leaves ample margin. The bound mainly
+ * guards against a future pool shrinking enough to make this a real infinite loop.
  */
 export function selectUniqueWhimsyFragments(recentPosts: readonly WhimsyPostLogRow[]): WhimsyFragments {
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {

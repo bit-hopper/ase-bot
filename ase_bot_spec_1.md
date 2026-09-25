@@ -935,7 +935,7 @@ Sun and Moon never carry either, since they don't retrograde from Earth's frame.
 Two-post thread (9 commands no longer fit the single-post form the original mockup assumed):
 
 ```
-🧚🏾‍♀️ Asé — astrology bot with a scoop of whimsy ✨
+🧚🏾‍♀️ I'm Asé — an astrology bot with a scoop of whimsy ✨
 
 All commands:
 
@@ -956,7 +956,7 @@ The bare `/help` (no `list-all`) reply is a shorter single-post getting-started 
 full reference above:
 
 ```
-🧚🏾‍♀️ Asé — astrology bot with a scoop of whimsy ✨
+🧚🏾‍♀️ I'm Asé — an astrology bot with a scoop of whimsy ✨
 
 To get started: /set sun [your sun sign]
 

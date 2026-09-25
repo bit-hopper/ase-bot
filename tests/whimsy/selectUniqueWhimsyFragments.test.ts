@@ -23,6 +23,19 @@ describe("isWhimsyPostAllowed (repeat-avoidance rules)", () => {
     expect(isWhimsyPostAllowed(fragments({ sign: "gemini" }), history)).toBe(true);
   });
 
+  it("rejects a sign seen anywhere in the last 11 posts, not just the immediately-preceding one", () => {
+    const history = [row({ sign: "leo" }), row({ sign: "taurus" })];
+    expect(isWhimsyPostAllowed(fragments({ sign: "leo" }), history)).toBe(false);
+  });
+
+  it("allows a sign once it's aged out of the 11-post cycle window", () => {
+    const otherSigns = ZODIAC_SIGNS.filter((s) => s !== "taurus"); // exactly 11 signs
+    const history = [...otherSigns.map((sign) => row({ sign })), row({ sign: "taurus" })]; // taurus is the 12th-most-recent
+    const last11 = history.slice(0, 11);
+    expect(last11.some((r) => r.sign === "taurus")).toBe(false);
+    expect(isWhimsyPostAllowed(fragments({ sign: "taurus" }), last11)).toBe(true);
+  });
+
   it("rejects reusing a directive seen within the last 10 posts, regardless of sign", () => {
     const history = [row({ sign: "leo", directive: "buy the smaller one" })];
     expect(isWhimsyPostAllowed(fragments({ sign: "gemini", directive: "buy the smaller one" }), history)).toBe(false);
@@ -74,5 +87,42 @@ describe("selectUniqueWhimsyFragments", () => {
       const selected = selectUniqueWhimsyFragments([]);
       expect(ZODIAC_SIGNS).toContain(selected.sign);
     }
+  });
+
+  it("cycles through every sign before any repeat", () => {
+    // Simulate a growing post history, newest-first, the way the queue worker builds it.
+    const history: WhimsyPostLogRow[] = [];
+    const signSequence: string[] = [];
+    for (let i = 0; i < 36; i++) {
+      const selected = selectUniqueWhimsyFragments(history);
+      signSequence.push(selected.sign);
+      history.unshift(row({ sign: selected.sign, directive: selected.directive, punchline: selected.punchline }));
+    }
+
+    // Any 12 consecutive posts must contain all 12 signs exactly once — the sliding-window
+    // invariant that falls out of rejecting a sign seen in the last 11 posts.
+    for (let i = 0; i + 12 <= signSequence.length; i++) {
+      const window = signSequence.slice(i, i + 12);
+      expect(new Set(window).size).toBe(12);
+    }
+  });
+
+  it("picks the first lap's order randomly rather than the fixed zodiac-calendar order", () => {
+    // Over many independent runs starting from empty history, the first 12 picks shouldn't
+    // consistently land in ZODIAC_SIGNS' own order — that would mean the "random" cycle is
+    // secretly a hard-coded rotation.
+    let matchesCanonicalOrder = 0;
+    const trials = 30;
+    for (let t = 0; t < trials; t++) {
+      const history: WhimsyPostLogRow[] = [];
+      const lap: string[] = [];
+      for (let i = 0; i < 12; i++) {
+        const selected = selectUniqueWhimsyFragments(history);
+        lap.push(selected.sign);
+        history.unshift(row({ sign: selected.sign, directive: selected.directive, punchline: selected.punchline }));
+      }
+      if (lap.join(",") === ZODIAC_SIGNS.join(",")) matchesCanonicalOrder++;
+    }
+    expect(matchesCanonicalOrder).toBeLessThan(trials);
   });
 });

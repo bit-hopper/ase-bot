@@ -80,7 +80,7 @@ describe("processWhimsyPost", () => {
     const { deps, posted, queue } = makeDeps();
     try {
       await processWhimsyPost(deps);
-      expect(posted[0]).not.toMatch(/^Leo:/);
+      expect(posted[0]).not.toMatch(/^Leo,/);
       expect(posted[0]).not.toContain(", Leo.");
     } finally {
       await queue.close();

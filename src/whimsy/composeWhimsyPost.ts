@@ -3,24 +3,24 @@ import { randomBool, randomChoice } from "../random/csprng.js";
 import { titleCase } from "../output/textUtils.js";
 import { WHIMSY_DIRECTIVE_POOL, WHIMSY_POOL_B_DIRECTIVES, WHIMSY_POOL_B_PUNCHLINES } from "./whimsyFragments.js";
 
-/** §2 round 2: ~30% of posts get a punchline (round 3 lowered this from round 2's implicit
- *  "most posts have one" — closer to the reference material's actual mostly-single-line reality). */
-const WHIMSY_PUNCHLINE_RATE = 0.3;
+/** ~15% of posts get a punchline, so 85% are directive-only (round 5 lowered this from round 3's
+ *  30%, pushing further toward the reference material's mostly-single-line reality). */
+const WHIMSY_PUNCHLINE_RATE = 0.15;
 
 /** The dedup-relevant content of one whimsy post — the fields the repeat-avoidance log tracks and
- *  checks (see selectUniqueWhimsyFragments.ts). Deliberately excludes sentence-shape (colon vs.
- *  comma form) — that's a formatting detail, not a fragment choice, and formatWhimsyPost picks it
- *  independently each time it's called. */
+ *  checks (see selectUniqueWhimsyFragments.ts). Deliberately excludes sentence-shape (sign-first
+ *  vs. directive-first) — that's a formatting detail, not a fragment choice, and formatWhimsyPost
+ *  picks it independently each time it's called. */
 export interface WhimsyFragments {
   sign: ZodiacSign;
   directive: string;
   punchline: string | null;
 }
 
-/** Comma-form ("{directive}, {sign}.") repositions the directive to sentence-initial position —
- *  only safe for directives with no internal terminal punctuation (a directive like "put it
- *  back!" or "bring an umbrella. You won't need it" would read broken mid-sentence). Those
- *  directives always render in colon-form instead. */
+/** Directive-first comma form ("{directive}, {sign}.") repositions the directive to
+ *  sentence-initial position — only safe for directives with no internal terminal punctuation (a
+ *  directive like "put it back!" or "bring an umbrella. You won't need it" would read broken
+ *  mid-sentence). Those directives always render in sign-first form instead. */
 function isSimpleDirective(directive: string): boolean {
   return !/[.!?]/.test(directive);
 }
@@ -46,14 +46,14 @@ export function pickWhimsyFragments(): WhimsyFragments {
 
 /**
  * Renders fragments into post text, in one of two sentence shapes seen in the source material —
- * colon-led or comma-led — always closing with the ✨ marker that distinguishes whimsy from both
- * the oracular reading voice and the plain phenomena-post register.
+ * sign-first or directive-first, both comma-led — always closing with the ✨ marker that
+ * distinguishes whimsy from both the oracular reading voice and the plain phenomena-post register.
  */
 export function formatWhimsyPost(fragments: WhimsyFragments): string {
   const { sign, directive, punchline } = fragments;
-  const useCommaForm = isSimpleDirective(directive) && randomBool();
+  const useDirectiveFirst = isSimpleDirective(directive) && randomBool();
 
-  const body = useCommaForm ? `${titleCase(directive)}, ${titleCase(sign)}.` : `${titleCase(sign)}: ${ensureSentence(directive)}`;
+  const body = useDirectiveFirst ? `${titleCase(directive)}, ${titleCase(sign)}.` : `${titleCase(sign)}, ${ensureSentence(directive)}`;
 
   const withPunchline = punchline ? `${body} ${ensureSentence(titleCase(punchline))}` : body;
 

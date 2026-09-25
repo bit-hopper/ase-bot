@@ -31,7 +31,7 @@ describe("composeWhimsyPost (spec §9.7)", () => {
     expect(seen.size).toBe(ZODIAC_SIGNS.length);
   });
 
-  it("appends a Pool B punchline on roughly 30% of posts over many trials", () => {
+  it("appends a Pool B punchline on roughly 15% of posts over many trials", () => {
     const n = 4000;
     let withPunchline = 0;
     for (let i = 0; i < n; i++) {
@@ -39,22 +39,22 @@ describe("composeWhimsyPost (spec §9.7)", () => {
       if (WHIMSY_POOL_B_PUNCHLINES.some((p) => post.toLowerCase().includes(p.toLowerCase()))) withPunchline++;
     }
     const rate = withPunchline / n;
-    expect(rate).toBeGreaterThan(0.24);
-    expect(rate).toBeLessThan(0.36);
+    expect(rate).toBeGreaterThan(0.1);
+    expect(rate).toBeLessThan(0.2);
   });
 
-  it("uses both the colon-led and comma-led sentence shapes over many trials", () => {
-    let colonForm = 0;
-    let commaForm = 0;
+  it("uses both the sign-first and directive-first sentence shapes over many trials", () => {
+    let signFirst = 0;
+    let directiveFirst = 0;
     const n = 500;
     for (let i = 0; i < n; i++) {
       const post = composeWhimsyPost();
       const sign = ZODIAC_SIGNS.find((s) => post.includes(`${s.charAt(0).toUpperCase()}${s.slice(1)}`))!;
       const signTitle = `${sign.charAt(0).toUpperCase()}${sign.slice(1)}`;
-      if (post.startsWith(`${signTitle}:`)) colonForm++;
-      else if (post.includes(`, ${signTitle}.`)) commaForm++;
+      if (post.startsWith(`${signTitle},`)) signFirst++;
+      else if (post.includes(`, ${signTitle}.`)) directiveFirst++;
     }
-    expect(colonForm).toBeGreaterThan(0);
-    expect(commaForm).toBeGreaterThan(0);
+    expect(signFirst).toBeGreaterThan(0);
+    expect(directiveFirst).toBeGreaterThan(0);
   });
 });
