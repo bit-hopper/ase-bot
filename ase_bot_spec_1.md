@@ -224,6 +224,8 @@ Asé responds only when **explicitly mentioned** via a rich-text facet. It never
 | `/moon`             | Current Moon sign + phase + brief interpretation                                                                           |
 | `/chart`            | Displays stored natal placements with element balance visualization                                                       |
 | `/check [planet]`   | Current sign, degree, and retrograde status for one of the 10 tracked planets (§10.4b)                                    |
+| `/check all`        | Same detail for all 10 tracked planets, threaded (§10.4c)                                                                 |
+| `/check retrograde` | Same detail for only the planets currently retrograde, threaded (§10.4d)                                                  |
 
 ### 4.2 v2 Commands (Do Not Implement in v1)
 
@@ -921,6 +923,42 @@ Pulled from the same cache-through ephemeris lookup `/moon` uses (`fetchTransitS
 §10.5), for whichever of the 10 tracked planets (§4.1) the user named. Degree is floored, not
 rounded. The retrograde glyph (℞) and second sentence only appear when `isRetrograde` is true;
 Sun and Moon never carry either, since they don't retrograde from Earth's frame.
+
+### 10.4c `/check all` Output
+
+```
+♄ Saturn · 13° Aries ℞
+
+Structure, discipline, what you're building to last. Retrograde: a chance to
+rebuild the foundation before building higher.
+
+♃ Jupiter · 2° Cancer
+
+Growth, luck, the urge to go bigger.
+```
+
+Threaded reply: one block per tracked planet, in §4.1's canonical `PLANETS` order (Sun through
+Pluto), each block rendered identically to single-planet `/check` (§10.4b). Blocks are packed
+greedily to fit as many as possible into each post within the 300-character limit, so most posts
+hold more than one planet.
+
+### 10.4d `/check retrograde` Output
+
+```
+♄ Saturn · 13° Aries ℞
+
+Structure, discipline, what you're building to last. Retrograde: a chance to
+rebuild the foundation before building higher.
+```
+
+Same block rendering as §10.4b/§10.4c, filtered to whichever of the 8 retrograde-capable planets
+(all but Sun and Moon, which never retrograde from Earth's frame) are currently retrograde.
+Threaded and packed the same way as `/check all` when more than one planet qualifies. When no
+planet is currently retrograde, replies with a single post instead:
+
+```
+All clear — nothing's retrograde right now.
+```
 
 ### 10.5 `/moon` Output
 

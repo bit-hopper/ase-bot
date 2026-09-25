@@ -1,6 +1,7 @@
 import { afterAll, beforeEach, describe, expect, it } from "vitest";
 import { getPool } from "../../src/db/client.js";
 import { handleCheck } from "../../src/commands/check.js";
+import { fitsInOnePost } from "../../src/output/replyThread.js";
 import { buildTestContext } from "./testContext.js";
 
 const pool = getPool();
@@ -43,5 +44,30 @@ describe("handleCheck (§4.1)", () => {
   it("replies with the usage string when no body is given", async () => {
     const [reply] = await handleCheck(ctx, "");
     expect(reply).toContain("Try: /check");
+  });
+
+  it("returns a threaded reply covering all 10 planets for 'all'", async () => {
+    const reply = await handleCheck(ctx, "all");
+    expect(reply.length).toBeGreaterThan(1);
+    for (const post of reply) expect(fitsInOnePost(post)).toBe(true);
+
+    const joined = reply.join("\n\n");
+    expect(joined).toContain("☿ Mercury · 5° Virgo");
+    expect(joined).toContain("♄ Saturn");
+    expect(joined).toContain("℞");
+  });
+
+  it("is case-insensitive for 'all'", async () => {
+    const reply = await handleCheck(ctx, "ALL");
+    expect(reply.length).toBeGreaterThan(1);
+  });
+
+  it("returns only the retrograde planet(s) for 'retrograde'", async () => {
+    const reply = await handleCheck(ctx, "retrograde");
+    const joined = reply.join("\n\n");
+    expect(joined).toContain("♄ Saturn");
+    expect(joined).toContain("℞");
+    expect(joined).not.toContain("Mercury");
+    for (const post of reply) expect(fitsInOnePost(post)).toBe(true);
   });
 });

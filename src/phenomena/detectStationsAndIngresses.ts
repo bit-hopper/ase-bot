@@ -1,5 +1,5 @@
 import type { PlanetPosition } from "../astro/ephemeris.js";
-import { PLANETS, type Planet, type ZodiacSign } from "../data/types.js";
+import { PLANETS, RETROGRADE_CAPABLE_PLANETS, type Planet, type ZodiacSign } from "../data/types.js";
 
 export interface PlanetPhenomenaState {
   sign: ZodiacSign;
@@ -7,9 +7,6 @@ export interface PlanetPhenomenaState {
 }
 
 export type PhenomenaState = Record<Planet, PlanetPhenomenaState>;
-
-/** Sun and Moon never retrograde — station events only apply to the other 8 tracked bodies. */
-export const RETROGRADE_CAPABLE_PLANETS: readonly Planet[] = PLANETS.filter((p) => p !== "sun" && p !== "moon");
 
 export interface StationEvent {
   type: "station";

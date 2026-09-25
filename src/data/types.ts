@@ -36,6 +36,10 @@ export const PLANETS = [
 
 export type Planet = (typeof PLANETS)[number];
 
+/** Sun and Moon never retrograde — station events and /check retrograde only apply to the
+ *  other 8 tracked bodies. */
+export const RETROGRADE_CAPABLE_PLANETS: readonly Planet[] = PLANETS.filter((p) => p !== "sun" && p !== "moon");
+
 export const TAROT_SUITS = ["wands", "cups", "swords", "pentacles"] as const;
 export type TarotSuit = (typeof TAROT_SUITS)[number];
 
