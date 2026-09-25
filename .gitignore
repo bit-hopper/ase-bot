@@ -9,3 +9,6 @@ ephe/
 
 # Local Claude Code settings
 .claude/settings.local.json
+
+# Scratch notes, not part of the tracked project docs
+v2.md
