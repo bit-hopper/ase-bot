@@ -1,5 +1,5 @@
 import type { EclipseEvent } from "../astro/eclipses.js";
-import type { MoonPhaseEvent } from "../phenomena/detectMoonPhaseChange.js";
+import type { MoonPhaseExactEvent } from "../astro/moonPhaseExact.js";
 import type { IngressEvent, StationEvent } from "../phenomena/detectStationsAndIngresses.js";
 import { phenomenaTemplate } from "../phenomena/phenomenaTemplates.js";
 import { interpolateSlots } from "../templates/slots.js";
@@ -22,6 +22,6 @@ export function formatEclipseEvent(event: EclipseEvent): ReplyThread {
   return [interpolateSlots(phenomenaTemplate(key), { sign: titleCase(event.sign), date })];
 }
 
-export function formatMoonPhaseEvent(event: MoonPhaseEvent): ReplyThread {
+export function formatMoonPhaseEvent(event: MoonPhaseExactEvent): ReplyThread {
   return [interpolateSlots(phenomenaTemplate("moonPhase"), { phase: moonPhaseLabel(event.phase) })];
 }
