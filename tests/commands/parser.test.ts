@@ -15,6 +15,10 @@ describe("parseCommand (§4.3)", () => {
     expect(parseCommand("/divine").command).toBe("divine");
   });
 
+  it("recognizes /check with a planet argument", () => {
+    expect(parseCommand("/check venus")).toEqual({ command: "check", args: "venus" });
+  });
+
   it("captures everything after the command as args", () => {
     expect(parseCommand("/set Sun Leo")).toEqual({ command: "set", args: "Sun Leo" });
   });

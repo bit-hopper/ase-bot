@@ -223,6 +223,7 @@ Asé responds only when **explicitly mentioned** via a rich-text facet. It never
 | `/divine`           | Formerly `/reading`: natal placements + real-time transit decan → Minor Arcana card, via Impact Score/Anchor Transit (§6.2)|
 | `/moon`             | Current Moon sign + phase + brief interpretation                                                                           |
 | `/chart`            | Displays stored natal placements with element balance visualization                                                       |
+| `/check [planet]`   | Current sign, degree, and retrograde status for one of the 10 tracked planets (§10.4b)                                    |
 
 ### 4.2 v2 Commands (Do Not Implement in v1)
 
@@ -730,8 +731,8 @@ which is fine — only one ever renders per reading, so it's never seen twice in
 ### 9.7 Whimsy Voice Guidelines
 
 Whimsy is a feature-flagged (`WHIMSY_ENABLED`), self-scheduling standalone-post feature —
-separate from `/help`, `/set`, `/sign`, `/pull`, `/reading`, `/divine`, `/moon`, `/chart`, none of
-which it touches. It posts unprompted, sign-flavored one-liners (`src/whimsy/`), not replies to a
+separate from `/help`, `/set`, `/sign`, `/pull`, `/reading`, `/divine`, `/moon`, `/chart`, `/check`,
+none of which it touches. It posts unprompted, sign-flavored one-liners (`src/whimsy/`), not replies to a
 command. Its voice is deliberately distinct from §9.5's oracular reading voice — a "whimsical,
 suspiciously specific friend" register, not a mystical one — so it has its own constraints rather
 than reusing §9.5's:
@@ -907,6 +908,20 @@ Element balance is computed from the three placements:
 - Each placement contributes its sign's element
 - Bar length = (count of that element / 3) × 10 blocks
 
+### 10.4b `/check` Output
+
+```
+♄ Saturn · 13° Aries ℞
+
+Structure, discipline, what you're building to last. Retrograde: a chance to
+rebuild the foundation before building higher.
+```
+
+Pulled from the same cache-through ephemeris lookup `/moon` uses (`fetchTransitSnapshots`,
+§10.5), for whichever of the 10 tracked planets (§4.1) the user named. Degree is floored, not
+rounded. The retrograde glyph (℞) and second sentence only appear when `isRetrograde` is true;
+Sun and Moon never carry either, since they don't retrograde from Earth's frame.
+
 ### 10.5 `/moon` Output
 
 ```
@@ -917,7 +932,7 @@ Element balance is computed from the three placements:
 
 ### 10.6 `/help` Output
 
-Two-post thread (8 commands no longer fit the single-post form the original mockup assumed):
+Two-post thread (9 commands no longer fit the single-post form the original mockup assumed):
 
 ```
 🧚🏾‍♀️ Asé — astrology bot with a scoop of whimsy ✨
@@ -931,6 +946,7 @@ All commands:
 ```
 ```
 /moon     — current moon sign & phase
+/check [planet] — current sky position & retrograde
 /sign     — your sun sign
 /divine   — a card drawn from today's sky
 /help     — this message
@@ -1232,7 +1248,7 @@ Rate limits are enforced **before** a job enters the worker (checked in the queu
 | Max readings (`/reading`, `/divine`) per hour           | 5                |
 | Max readings per day                                    | 20               |
 | Max pulls (`/pull`) per hour                            | 10               |
-| `/help`, `/chart`, `/sign`, `/moon`                     | Not rate-limited |
+| `/help`, `/chart`, `/sign`, `/moon`, `/check`           | Not rate-limited |
 
 `/divine` shares the same bucket as `/reading` — it's the same live-ephemeris
 computation the limit was originally sized for, just under its post-redesign name.
@@ -1382,7 +1398,7 @@ established short-and-warm register and checked against §9.5's voice rules.
 
 ### v1 (This Spec)
 
-**Commands:** `/help`, `/set`, `/sign`, `/pull`, `/reading`, `/divine`, `/moon`, `/chart` (8 — `/divine` added when `/reading` was redesigned, §6.7-6.9; `/daily` removed in v1.3.0, §6.5)
+**Commands:** `/help`, `/set`, `/sign`, `/pull`, `/reading`, `/divine`, `/moon`, `/chart`, `/check` (9 — `/divine` added when `/reading` was redesigned, §6.7-6.9; `/daily` removed in v1.3.0, §6.5; `/check` added post-v1.3.0 for live per-planet position + retrograde lookups)
 
 **Engine:** Decan-based card selection for `/divine` (Minor Arcana 2–10) · Sun/Moon/Rising Big Three formula for `/reading` (§6.7-6.9) · `/pull` with 65% Major Arcana weighting (full 78 cards) · Aspect-based orientation logic for `/divine` (`/reading` never reverses, §6.9) · Static template library for `/divine` (432 synthesis blocks) plus a 26-entry connector/domain library for `/reading` (§9.6) · Bio parsing fallback · BullMQ queue · PostgreSQL profile cache · No LLM dependency
 

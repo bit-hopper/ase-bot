@@ -1,6 +1,7 @@
 import type { ReplyThread } from "../output/replyThread.js";
 import type { CommandContext } from "./context.js";
 import { handleChart } from "./chart.js";
+import { handleCheck } from "./check.js";
 import { handleDivine } from "./divine.js";
 import { handleHelp } from "./help.js";
 import { handleMoon } from "./moon.js";
@@ -11,7 +12,7 @@ import { handleSet } from "./set.js";
 import { handleSign } from "./sign.js";
 
 /** §4.3 — parses `rawText` and dispatches to the matching handler; unrecognized text (no
- *  command token, or a token that isn't one of the 8 v1 commands) replies with /help. */
+ *  command token, or a token that isn't one of the 9 v1 commands) replies with /help. */
 export async function handleCommand(ctx: CommandContext, rawText: string): Promise<ReplyThread> {
   const { command, args } = parseCommand(rawText);
 
@@ -32,6 +33,8 @@ export async function handleCommand(ctx: CommandContext, rawText: string): Promi
       return handleMoon(ctx);
     case "chart":
       return handleChart(ctx);
+    case "check":
+      return handleCheck(ctx, args);
     case null:
       return handleHelp();
   }

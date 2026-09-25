@@ -69,4 +69,9 @@ describe("handleCommand router (§4.3)", () => {
     const thread = await handleCommand(ctx, "/reading");
     expect(thread.join("\n")).toContain("THEME");
   });
+
+  it("routes /check to the check handler", async () => {
+    const thread = await handleCommand(ctx, "/check venus");
+    expect(thread.join("\n")).toContain("Venus");
+  });
 });

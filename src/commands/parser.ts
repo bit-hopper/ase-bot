@@ -1,10 +1,10 @@
-/** §4.1 — the 8 v1 commands. v2 commands (/compat, /transit, /weekly, ...) are
+/** §4.1 — the 9 v1 commands. v2 commands (/compat, /transit, /weekly, ...) are
  *  intentionally absent. `divine` is the renamed original /reading engine —
  *  `reading` now means the new Sun/Moon/Rising Big Three command.
  *  `/daily` was dropped: it shared /reading's exact pipeline and, in practice, its output too
  *  (the only difference — a 00:00 UTC ephemeris pin vs. live "now" — almost never showed up,
  *  since the Moon rarely crosses a sign boundary within the same UTC day). */
-export const V1_COMMANDS = ["help", "set", "sign", "pull", "reading", "divine", "moon", "chart"] as const;
+export const V1_COMMANDS = ["help", "set", "sign", "pull", "reading", "divine", "moon", "chart", "check"] as const;
 export type CommandName = (typeof V1_COMMANDS)[number];
 
 export interface ParsedCommand {

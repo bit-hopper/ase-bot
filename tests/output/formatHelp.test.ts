@@ -24,7 +24,7 @@ describe("formatHelpQuick (default /help)", () => {
 describe("formatHelpFull (/help list-all)", () => {
   it("mentions every command", () => {
     const full = formatHelpFull().join("\n");
-    for (const cmd of ["/set", "/reading", "/divine", "/pull", "/chart", "/moon", "/sign", "/help"]) {
+    for (const cmd of ["/set", "/reading", "/divine", "/pull", "/chart", "/moon", "/check", "/sign", "/help"]) {
       expect(full).toContain(cmd);
     }
   });

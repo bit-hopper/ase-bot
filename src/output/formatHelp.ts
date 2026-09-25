@@ -15,7 +15,7 @@ Commands:
   ];
 }
 
-/** /help list-all — the full command reference. Over the 300-char limit for 8 commands,
+/** /help list-all — the full command reference. Over the 300-char limit for 9 commands,
  *  so it's split into a 2-post thread. */
 export function formatHelpFull(): ReplyThread {
   return [
@@ -28,6 +28,7 @@ All commands:
 /chart    — your element balance
 /pull     — one card from the full deck`,
     `/moon     — current moon sign & phase
+/check [planet] — current sky position & retrograde
 /sign     — your sun sign
 /divine   — a card drawn from today's sky
 /help     — this message`,
