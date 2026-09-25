@@ -22,29 +22,29 @@ describe("handleMoon (§10.5)", () => {
     expect(reply!.split("\n\n")).toHaveLength(2);
   });
 
-  it("appends 'exact today' when the notable phase's exact instant falls on the same UTC date", async () => {
+  it("appends '<pct>%, today' when the notable phase's exact instant falls on the same UTC date", async () => {
     // ctx's fixed `now` (2026-08-28T12:00:00Z) is a full moon whose exact opposition (~04:18 UTC
     // that same day) already passed a few hours earlier — same calendar day either way.
     const [reply] = await handleMoon(ctx);
-    expect(reply).toContain("Full Moon (exact today)");
+    expect(reply).toMatch(/Full Moon \(\d+%, today\)/);
   });
 
-  it("appends an 'exact in ...' countdown for a notable phase still approaching its exact instant", async () => {
+  it("appends '<pct>%, ... until' for a notable phase still approaching its exact instant", async () => {
     const approachingCtx = { ...ctx, now: new Date("2026-08-27T20:00:00Z") }; // ~8h before, previous UTC day
     const [reply] = await handleMoon(approachingCtx);
-    expect(reply).toMatch(/Full Moon \(exact in \d+h\)/);
+    expect(reply).toMatch(/Full Moon \(\d+%, \d+h until\)/);
   });
 
-  it("appends an 'exact ... ago' countdown for a notable phase whose exact instant already passed", async () => {
+  it("appends '<pct>%, ... since' for a notable phase whose exact instant already passed", async () => {
     const pastCtx = { ...ctx, now: new Date("2026-08-30T00:00:00Z") }; // ~2 days after that full moon
     const [reply] = await handleMoon(pastCtx);
-    expect(reply).toMatch(/Full Moon \(exact \d+d \d+h ago\)/);
+    expect(reply).toMatch(/Full Moon \(\d+%, \d+d \d+h since\)/);
   });
 
-  it("does not append a countdown for a non-notable phase", async () => {
+  it("does not append a phase-detail readout for a non-notable phase", async () => {
     // A few days after full moon, still waning but well outside the full-moon band.
     const gibbousCtx = { ...ctx, now: new Date("2026-09-01T00:00:00Z") };
     const [reply] = await handleMoon(gibbousCtx);
-    expect(reply).not.toContain("(exact");
+    expect(reply).not.toMatch(/\(\d+%/);
   });
 });

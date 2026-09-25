@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { computeMoonPhase, moonElongation } from "../../src/astro/moonPhase.js";
+import { computeMoonPhase, moonElongation, moonIllumination } from "../../src/astro/moonPhase.js";
 
 describe("moonElongation", () => {
   it("is 0 at conjunction (new moon)", () => {
@@ -33,5 +33,24 @@ describe("computeMoonPhase boundaries", () => {
     [359.9, "dark_moon"],
   ] as const)("elongation %s deg -> %s", (elongation, expected) => {
     expect(computeMoonPhase(0, elongation)).toBe(expected);
+  });
+});
+
+describe("moonIllumination", () => {
+  it("is 0 at new moon (elongation 0)", () => {
+    expect(moonIllumination(0)).toBeCloseTo(0);
+  });
+
+  it("is 50 at the quarters (elongation 90/270)", () => {
+    expect(moonIllumination(90)).toBeCloseTo(50);
+    expect(moonIllumination(270)).toBeCloseTo(50);
+  });
+
+  it("is 100 at full moon (elongation 180)", () => {
+    expect(moonIllumination(180)).toBeCloseTo(100);
+  });
+
+  it("is ~98 a day and a half before full moon (elongation ~162deg)", () => {
+    expect(moonIllumination(162.3)).toBeCloseTo(97.7, 0);
   });
 });

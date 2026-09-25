@@ -32,3 +32,11 @@ export function computeMoonPhase(sunLongitude: number, moonLongitude: number): M
   const entry = PHASE_BOUNDARIES.find((b) => elongation < b.max);
   return entry!.phase;
 }
+
+/** Fraction of the Moon's visible disk that's lit, as a percentage [0, 100]. Standard
+ *  circular-orbit approximation from elongation — ignores libration/distance, which a
+ *  1-2 sentence astrology-bot readout doesn't need. 0 at new moon, 100 at full moon. */
+export function moonIllumination(elongationDeg: number): number {
+  const elongationRad = (elongationDeg * Math.PI) / 180;
+  return ((1 - Math.cos(elongationRad)) / 2) * 100;
+}
