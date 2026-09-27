@@ -23,3 +23,10 @@ export async function recordWhimsyPost(pool: pg.Pool, fragments: WhimsyFragments
     fragments.punchline,
   ]);
 }
+
+/** Count of whimsy posts logged at or after `since` — used to enforce the round 5 hard daily cap
+ *  (see whimsyCadence.ts's windowStartUtc, which computes today's 6am PST cutoff for this). */
+export async function countWhimsyPostsSince(pool: pg.Pool, since: Date): Promise<number> {
+  const result = await pool.query<{ count: string }>("SELECT COUNT(*) FROM whimsy_post_log WHERE posted_at >= $1", [since]);
+  return Number(result.rows[0]!.count);
+}

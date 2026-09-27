@@ -14,7 +14,8 @@ import { createPhenomenaQueue, schedulePhenomenaChecks } from "./queue/phenomena
 import { createPhenomenaWorker } from "./queue/phenomenaWorker.js";
 import { createWhimsyQueue, seedWhimsyChainIfEmpty } from "./queue/whimsyQueue.js";
 import { createWhimsyWorker } from "./queue/whimsyWorker.js";
-import { nextWhimsyDelayMs } from "./whimsy/whimsyCadence.js";
+import { nextWhimsyDelayMs, windowStartUtc } from "./whimsy/whimsyCadence.js";
+import { countWhimsyPostsSince } from "./whimsy/whimsyPostLog.js";
 import { createRedisClient } from "./queue/redisClient.js";
 import { loadReadingTemplates } from "./templates/loadTemplates.js";
 import { createReadingWorker } from "./queue/worker.js";
@@ -75,11 +76,14 @@ async function main(): Promise<void> {
     whimsyQueueConnection = createRedisClient();
     whimsyWorkerConnection = createRedisClient();
     whimsyQueue = createWhimsyQueue(whimsyQueueConnection);
-    // Self-rescheduling delay chain (§2 round 4), not a fixed schedule — seeds the first job only
+    // Self-rescheduling delay chain (§2 round 5), not a fixed schedule — seeds the first job only
     // if the chain isn't already running from a prior process (restart-safety, see
     // seedWhimsyChainIfEmpty). processWhimsyPost re-adds the next one after every subsequent
-    // tick, success or failure.
-    await seedWhimsyChainIfEmpty(whimsyQueue, nextWhimsyDelayMs(new Date()));
+    // tick, success or failure. Today's post count (for the hard daily cap) is re-derived from the
+    // log here too, so a restart mid-day doesn't reset the cap and overshoot 6 posts.
+    const startupNow = new Date();
+    const postsToday = await countWhimsyPostsSince(pool, windowStartUtc(startupNow));
+    await seedWhimsyChainIfEmpty(whimsyQueue, nextWhimsyDelayMs(startupNow, postsToday));
 
     whimsyWorker = createWhimsyWorker(whimsyWorkerConnection, {
       pool,

@@ -8,10 +8,10 @@ export function createWhimsyQueue(connection: ConnectionOptions): Queue<WhimsyPo
 }
 
 /**
- * Self-rescheduling delay chain (§2 round 4: window-bound but genuinely variable cadence, not a
- * fixed interval) — unlike phenomena's upsertJobScheduler. Each tick computes its own next delay
- * via whimsyCadence.ts and re-adds itself (see processWhimsyPost.ts), so this only needs to seed
- * the very first job on startup.
+ * Self-rescheduling delay chain (§2 round 5: window-bound, hard-capped at 6 posts/day, still with
+ * jittered spacing rather than a fixed interval) — unlike phenomena's upsertJobScheduler. Each
+ * tick computes its own next delay via whimsyCadence.ts and re-adds itself (see
+ * processWhimsyPost.ts), so this only needs to seed the very first job on startup.
  */
 export async function scheduleNextWhimsyPost(queue: Queue<WhimsyPostJob>, delayMs: number): Promise<void> {
   await queue.add("post", {}, { delay: delayMs });
