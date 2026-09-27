@@ -29,6 +29,12 @@ describe("formatHelpFull (/help list-all)", () => {
     }
   });
 
+  it("mentions the /check all and /check retrograde subcommands", () => {
+    const full = formatHelpFull().join("\n");
+    expect(full).toContain("/check all");
+    expect(full).toContain("/check retrograde");
+  });
+
   it("splits into multiple posts, each within the 300-char limit", () => {
     const thread = formatHelpFull();
     expect(thread.length).toBeGreaterThan(1);

@@ -28,7 +28,9 @@ All commands:
 /chart    — your element balance
 /pull     — one card from the full deck`,
     `/moon     — current moon sign & phase
-/check [planet] — current sky position & retrograde
+/check [planet] — sky position & retrograde
+/check all — every planet at once
+/check retrograde — which planets are retrograde right now
 /sign     — your sun sign
 /divine   — a card drawn from today's sky
 /help     — this message`,
