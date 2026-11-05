@@ -1,9 +1,18 @@
 # Asé — 🧚🏾‍♀️ Whimsical Astrology Bot: Implementation Specification
 
-**Version:** 1.3.0  
+**Version:** 1.4.0  
 **Protocol:** AT Protocol (Bluesky / ATProto ecosystem)  
 **Bot Handle:** `@ase.tinylil.world` (live — configured via `ASE_HANDLE`)  
 **Engine Name:** 🧚🏾‍♀️ Whimsical Astrology Engine
+
+**v1.4.0 change note:** commands are **no longer slash-prefixed**. A user invokes one by mentioning
+the bot and making the command the *first word* of the post — `@ase.tinylil.world pull`, not
+`@ase.tinylil.world /pull`. The old slash form no longer parses (it gets the help reply). A command
+word anywhere other than first position is ignored, so ordinary chat containing "moon" or "pull"
+never fires a command (§4.3). Throughout this document, "`/pull`", "`/reading`" etc. remain the
+*names* of the commands (a convention for referring to them); the slash is not part of what users
+type or what the bot parses. User-facing output (§10.6, usage and error strings) is written
+slash-less.
 
 **v1.3.0 change note:** `/daily` has been **removed**. It shared `/reading`'s exact pipeline
 (§6.7-6.9's Big Three formula) and, in practice, its output too — the only difference (a 00:00 UTC
@@ -166,13 +175,13 @@ Threshold: confidence < 0.75 → treat placement as `null`. Do not use low-confi
 
 ### 3.3 `/set` Command — Profile Locking
 
-Users establish their profile via the `/set` command. Profile data is stored per DID and **may be updated at any time** by re-running `/set`.
+Users establish their profile via the `/set` command (typed `set …` after the mention, §4.3). Profile data is stored per DID and **may be updated at any time** by re-running `/set`.
 
 ```
-/set sun leo
-/set moon pisces
-/set rising sagittarius
-/set sun leo moon pisces rising sagittarius   ← all at once
+set sun leo
+set moon pisces
+set rising sagittarius
+set sun leo moon pisces rising sagittarius   ← all at once
 ```
 
 On receipt:
@@ -233,7 +242,10 @@ Asé responds only when **explicitly mentioned** via a rich-text facet. It never
 
 ### 4.3 Command Parsing Rules
 
-- Commands are **case-insensitive** (`/Reading`, `/PULL`, `/set Sun Leo` all valid).
+- A command is invoked by the **first word** of the post after any leading @mention(s): `@ase.tinylil.world pull`, `@alice.bsky.social @ase.tinylil.world set sun leo`. There is **no slash**.
+- The command word must be first. A command word later in the text (`hey @ase reading please`, `what is the moon doing`) is not a command → `/help` summary. This is what keeps plain-word commands from firing on ordinary chat.
+- The old slash form (`/pull`) is **not** accepted and gets the `/help` summary.
+- Commands are **case-insensitive** (`Reading`, `PULL`, `set Sun Leo` all valid).
 - Unrecognized commands → reply with `/help` summary.
 - Commands with invalid arguments → reply with the specific usage string for that command.
 - A mention with no recognized command → reply with `/help` summary.
@@ -241,7 +253,7 @@ Asé responds only when **explicitly mentioned** via a rich-text facet. It never
 ### 4.4 `/reading` Inline Placement Overrides
 
 `/reading` is the only command that accepts arguments beyond its base form.
-`/reading sun libra moon pisces rising aquarius` overrides the
+`reading sun libra moon pisces rising aquarius` overrides the
 corresponding field(s) from the user's stored `/set` profile **for that single call only** —
 nothing persists. Fields omitted from the inline args fall back to the stored profile; a call
 with no inline args behaves exactly like the bare command.
@@ -975,19 +987,21 @@ Two-post thread (9 commands no longer fit the single-post form the original mock
 ```
 🧚🏾‍♀️ I'm Asé — an astrology bot with a scoop of whimsy ✨
 
-All commands:
+All commands (just mention me with one — no slash needed):
 
-/set sun [sign] moon [sign] rising [sign]
-/reading  — for a Sun, Moon & Rising reading
-/chart    — your element balance
-/pull     — one card from the full deck
+set sun [sign] moon [sign] rising [sign]
+reading  — for a Sun, Moon & Rising reading
+chart    — your element balance
+pull     — one card from the full deck
 ```
 ```
-/moon     — current moon sign & phase
-/check [planet] — current sky position & retrograde
-/sign     — your sun sign
-/divine   — a card drawn from today's sky
-/help     — this message
+moon     — current moon sign & phase
+check [planet] — sky position & retrograde
+check all — every planet at once
+check retrograde — which planets are retrograde right now
+sign     — your sun sign
+divine   — a card drawn from today's sky
+help     — this message
 ```
 
 The bare `/help` (no `list-all`) reply is a shorter single-post getting-started summary, not the
@@ -996,13 +1010,13 @@ full reference above:
 ```
 🧚🏾‍♀️ I'm Asé — an astrology bot with a scoop of whimsy ✨
 
-To get started: /set sun [your sun sign]
+To get started, mention me with: set sun [your sun sign]
 
 Commands:
 
-/set sun [sign] moon [sign] rising [sign]
-/reading  — for a Sun, Moon & Rising reading
-/help list-all     — to list all commands
+set sun [sign] moon [sign] rising [sign]
+reading  — for a Sun, Moon & Rising reading
+help list-all     — to list all commands
 ```
 
 ---

@@ -28,6 +28,6 @@ describe("formatChart (§10.4)", () => {
 
   it("prompts /set when nothing at all is set", () => {
     const [post] = formatChart({ sun: null, moon: null, rising: null });
-    expect(post).toContain("/set sun");
+    expect(post).toContain("set sun");
   });
 });

@@ -38,12 +38,12 @@ describe("handleCheck (§4.1)", () => {
 
   it("replies with the usage string for an invalid body", async () => {
     const [reply] = await handleCheck(ctx, "pizza");
-    expect(reply).toContain("Try: /check");
+    expect(reply).toContain("Try: check");
   });
 
   it("replies with the usage string when no body is given", async () => {
     const [reply] = await handleCheck(ctx, "");
-    expect(reply).toContain("Try: /check");
+    expect(reply).toContain("Try: check");
   });
 
   it("returns a threaded reply covering all 10 planets for 'all'", async () => {

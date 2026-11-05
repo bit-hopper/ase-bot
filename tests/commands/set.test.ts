@@ -31,7 +31,7 @@ describe("handleSet (§3.3/§4.3)", () => {
 
   it("returns the usage string for empty args", async () => {
     const [reply] = await handleSet(ctx, "");
-    expect(reply).toMatch(/Usage: \/set/);
+    expect(reply).toMatch(/Usage: set/);
   });
 
   it("returns an error message for an invalid sign, without storing anything", async () => {

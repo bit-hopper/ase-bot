@@ -7,7 +7,7 @@ const OTHER_DID = "did:plc:someoneelse0000000000000";
 describe("mentionsBotDid (§11.2 — facets only, never raw string match)", () => {
   it("detects a proper facet-encoded mention of the bot", () => {
     const record = {
-      text: "@asebot.bsky.social /reading",
+      text: "@asebot.bsky.social reading",
       facets: [{ features: [{ $type: "app.bsky.richtext.facet#mention", did: BOT_DID }] }],
     };
     expect(mentionsBotDid(record, BOT_DID)).toBe(true);
@@ -37,7 +37,7 @@ describe("mentionsBotDid (§11.2 — facets only, never raw string match)", () =
 
   it("finds a bot mention among multiple facets/features on the same post", () => {
     const record = {
-      text: "@someoneelse.bsky.social and @asebot.bsky.social /pull",
+      text: "@someoneelse.bsky.social and @asebot.bsky.social pull",
       facets: [
         { features: [{ $type: "app.bsky.richtext.facet#mention", did: OTHER_DID }] },
         { features: [{ $type: "app.bsky.richtext.facet#link", did: undefined }, { $type: "app.bsky.richtext.facet#mention", did: BOT_DID }] },

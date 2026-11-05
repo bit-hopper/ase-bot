@@ -51,6 +51,14 @@ and migrated automatically via a vitest `globalSetup`) and Redis logical DB (`/1
 `vitest.config.ts` and `tests/testEnv.ts`. Every test's `TRUNCATE`/`flushdb()` only ever touches
 that isolated storage, never a live bot's real data.
 
+### Invoking commands
+
+Mention the bot and make the command the **first word** — no slash: `@ase.tinylil.world pull`,
+`@ase.tinylil.world set sun leo`, `@ase.tinylil.world check retrograde`. A command word anywhere
+else in the post is ignored (so chatter containing "moon" or "pull" never fires one), and the old
+`/pull` slash form no longer parses. Docs and code comments still write `/pull`, `/reading`, etc.
+as the *names* of the commands. See spec §4.3.
+
 ### Two reading commands
 
 `/reading` was redesigned around the classic "Sun = theme, Moon = mood, Rising = where it plays

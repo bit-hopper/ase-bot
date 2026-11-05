@@ -51,7 +51,7 @@ describe("BullMQ queue + worker end-to-end (§12.1)", () => {
         mentionCid: "cid-e2e",
         authorDid: "did:plc:test-queue-worker-e2e",
         authorHandle: "user.bsky.social",
-        command: "/help",
+        command: "help",
         enqueuedAt: new Date().toISOString(),
       });
 

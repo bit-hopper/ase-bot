@@ -10,29 +10,29 @@ describe("formatHelpQuick (default /help)", () => {
   });
 
   it("points to /help list-all for the rest of the commands", () => {
-    expect(formatHelpQuick()[0]).toContain("/help list-all");
+    expect(formatHelpQuick()[0]).toContain("help list-all");
   });
 
   it("includes the getting-started line and the two most important commands", () => {
     const post = formatHelpQuick()[0]!;
-    expect(post).toContain("To get started: /set sun [your sun sign]");
-    expect(post).toContain("/set sun [sign] moon [sign] rising [sign]");
-    expect(post).toContain("/reading");
+    expect(post).toContain("To get started, mention me with: set sun [your sun sign]");
+    expect(post).toContain("set sun [sign] moon [sign] rising [sign]");
+    expect(post).toContain("reading");
   });
 });
 
-describe("formatHelpFull (/help list-all)", () => {
+describe("formatHelpFull (help list-all)", () => {
   it("mentions every command", () => {
     const full = formatHelpFull().join("\n");
-    for (const cmd of ["/set", "/reading", "/divine", "/pull", "/chart", "/moon", "/check", "/sign", "/help"]) {
+    for (const cmd of ["set", "reading", "divine", "pull", "chart", "moon", "check", "sign", "help"]) {
       expect(full).toContain(cmd);
     }
   });
 
-  it("mentions the /check all and /check retrograde subcommands", () => {
+  it("mentions the check all and check retrograde subcommands", () => {
     const full = formatHelpFull().join("\n");
-    expect(full).toContain("/check all");
-    expect(full).toContain("/check retrograde");
+    expect(full).toContain("check all");
+    expect(full).toContain("check retrograde");
   });
 
   it("splits into multiple posts, each within the 300-char limit", () => {

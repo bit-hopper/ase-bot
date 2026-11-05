@@ -1,6 +1,6 @@
 import { PLANETS, type Planet } from "../data/types.js";
 
-export const CHECK_USAGE = `Try: /check [${PLANETS.join("/")}], /check all, or /check retrograde`;
+export const CHECK_USAGE = `Try: check [${PLANETS.join("/")}], check all, or check retrograde`;
 
 export type ParsedCheckArgs =
   | { mode: "single"; planet: Planet }

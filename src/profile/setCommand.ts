@@ -32,7 +32,7 @@ export function parseSetArgs(argsText: string): ParseSetResult {
   const errors: string[] = [];
 
   if (tokens.length === 0) {
-    errors.push("No placements provided. Usage: /set sun [sign] moon [sign] rising [sign]");
+    errors.push("No placements provided. Usage: set sun [sign] moon [sign] rising [sign]");
     return { placements, errors };
   }
 

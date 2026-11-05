@@ -8,7 +8,7 @@ import { renderReading } from "../templates/renderReading.js";
 import type { CommandContext } from "./context.js";
 import { fetchTransitSnapshots, toUtcDateString } from "./positions.js";
 
-const NO_PROFILE_REPLY = "I don't have your placements yet. Try: /set sun [your sun sign]";
+const NO_PROFILE_REPLY = "I don't have your placements yet. Try: set sun [your sun sign]";
 
 /**
  * §6.2/§7/§10.1 — /divine (formerly /reading; renamed when /reading was redesigned around the

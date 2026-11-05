@@ -41,7 +41,7 @@ function placementLine(glyph: string, label: string, sign: ZodiacSign | null): s
  */
 export function formatChart(natal: NatalPlacements): ReplyThread {
   if (!natal.sun && !natal.moon && !natal.rising) {
-    return ["You haven't set any placements yet. Try: /set sun [sign] moon [sign] rising [sign]"];
+    return ["You haven't set any placements yet. Try: set sun [sign] moon [sign] rising [sign]"];
   }
 
   const placements = [

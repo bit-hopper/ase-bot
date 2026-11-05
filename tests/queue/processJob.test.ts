@@ -31,7 +31,7 @@ function makeJob(overrides: Partial<ReadingJob> = {}): ReadingJob {
     mentionCid: "cid123",
     authorDid: "did:plc:test-process-job",
     authorHandle: "user.bsky.social",
-    command: "/help",
+    command: "help",
     enqueuedAt: new Date("2026-08-28T12:00:00Z").toISOString(),
     ...overrides,
   };
@@ -66,7 +66,7 @@ describe("processReadingJob (§12.3)", () => {
     let posted: ReplyThread | null = null;
     const deps = makeDeps({ postReply: async (_job, reply) => { posted = reply; } });
 
-    const result = await processReadingJob(deps, makeJob({ command: "/help" }));
+    const result = await processReadingJob(deps, makeJob({ command: "help" }));
     expect(result.outcome).toBe("posted");
     expect(posted!.join("\n")).toContain("Asé");
   });
@@ -78,7 +78,7 @@ describe("processReadingJob (§12.3)", () => {
     let posted: ReplyThread | null = null;
     const deps = makeDeps({ postReply: async (_job, reply) => { posted = reply; } });
 
-    const result = await processReadingJob(deps, makeJob({ authorDid: did, command: "/help" }));
+    const result = await processReadingJob(deps, makeJob({ authorDid: did, command: "help" }));
     expect(result.outcome).toBe("rate_limited");
     expect(posted!.join("\n")).toMatch(/try again in/);
   });
@@ -88,7 +88,7 @@ describe("processReadingJob (§12.3)", () => {
     await upsertUserProfile(pool, did, { sun: "leo", moon: "pisces", rising: "sagittarius", profileSource: "command" });
 
     const deps = makeDeps({ postReply: async () => {} });
-    const result = await processReadingJob(deps, makeJob({ authorDid: did, command: "/reading" }));
+    const result = await processReadingJob(deps, makeJob({ authorDid: did, command: "reading" }));
 
     expect(result.outcome).toBe("posted");
     const row = await getUserProfile(pool, did);
@@ -100,7 +100,7 @@ describe("processReadingJob (§12.3)", () => {
     const did = "did:plc:test-process-job-pull";
 
     const deps = makeDeps({ postReply: async () => {} });
-    const result = await processReadingJob(deps, makeJob({ authorDid: did, command: "/pull" }));
+    const result = await processReadingJob(deps, makeJob({ authorDid: did, command: "pull" }));
 
     expect(result.outcome).toBe("posted");
     const row = await getUserProfile(pool, did);
@@ -113,7 +113,7 @@ describe("processReadingJob (§12.3)", () => {
     await upsertUserProfile(pool, did, { sun: "leo", profileSource: "command" });
 
     const deps = makeDeps({ postReply: async () => {} });
-    await processReadingJob(deps, makeJob({ authorDid: did, command: "/sign" }));
+    await processReadingJob(deps, makeJob({ authorDid: did, command: "sign" }));
 
     const row = await getUserProfile(pool, did);
     expect(row?.lastReadingAt).toBeNull();

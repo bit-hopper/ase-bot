@@ -21,19 +21,19 @@ afterAll(async () => {
 
 describe("handleCommand router (§4.3)", () => {
   it("routes /help to the quick help reply", async () => {
-    const thread = await handleCommand(ctx, "/help");
+    const thread = await handleCommand(ctx, "help");
     expect(thread.join("\n")).toContain("Asé");
     expect(thread).toHaveLength(1);
   });
 
   it("routes /help list-all to the full command reference", async () => {
-    const thread = await handleCommand(ctx, "/help list-all");
-    expect(thread.join("\n")).toContain("/pull");
+    const thread = await handleCommand(ctx, "help list-all");
+    expect(thread.join("\n")).toContain("pull");
     expect(thread.length).toBeGreaterThan(1);
   });
 
   it("routes an unrecognized command to /help (§4.3)", async () => {
-    const thread = await handleCommand(ctx, "/bogus");
+    const thread = await handleCommand(ctx, "bogus");
     expect(thread.join("\n")).toContain("Asé");
   });
 
@@ -44,34 +44,34 @@ describe("handleCommand router (§4.3)", () => {
 
   it("routes /sign to the sign handler", async () => {
     await upsertUserProfile(pool, DID, { sun: "leo", profileSource: "command" });
-    const thread = await handleCommand(ctx, "/sign");
+    const thread = await handleCommand(ctx, "sign");
     expect(thread.join("\n")).toContain("Leo");
   });
 
   it("routes /set to the set handler", async () => {
-    const thread = await handleCommand(ctx, "/set sun aries");
+    const thread = await handleCommand(ctx, "set sun aries");
     expect(thread.join("\n")).toContain("Aries");
   });
 
   it("is case-insensitive at the router level too", async () => {
-    const thread = await handleCommand(ctx, "/HELP");
+    const thread = await handleCommand(ctx, "HELP");
     expect(thread.join("\n")).toContain("Asé");
   });
 
   it("routes /divine to the renamed original /reading engine", async () => {
     await upsertUserProfile(pool, DID, { sun: "leo", moon: "pisces", rising: "sagittarius", profileSource: "command" });
-    const thread = await handleCommand(ctx, "/divine");
+    const thread = await handleCommand(ctx, "divine");
     expect(thread.join("\n")).toContain("TODAY'S CARD");
   });
 
   it("routes /reading to the new Big Three engine", async () => {
     await upsertUserProfile(pool, DID, { sun: "leo", moon: "pisces", rising: "sagittarius", profileSource: "command" });
-    const thread = await handleCommand(ctx, "/reading");
+    const thread = await handleCommand(ctx, "reading");
     expect(thread.join("\n")).toContain("THEME");
   });
 
   it("routes /check to the check handler", async () => {
-    const thread = await handleCommand(ctx, "/check venus");
+    const thread = await handleCommand(ctx, "check venus");
     expect(thread.join("\n")).toContain("Venus");
   });
 });

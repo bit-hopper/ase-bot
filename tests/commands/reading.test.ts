@@ -22,7 +22,7 @@ describe("handleReading (Big Three /reading, spec §6.7-6.9)", () => {
   it("prompts /set (or an inline sign) when there's no profile and no override args", async () => {
     const ctx = buildTestContext(pool, { did: DID });
     const [reply] = await handleReading(ctx, "");
-    expect(reply).toContain("/set sun");
+    expect(reply).toContain("set sun");
   });
 
   it("produces a THEME/MOOD/GROUND reading once a profile is set", async () => {

@@ -8,7 +8,7 @@ import type { CommandContext } from "./context.js";
 import { fetchTransitSnapshots } from "./positions.js";
 import { parseReadingArgs } from "./readingArgs.js";
 
-const NO_PROFILE_REPLY = "Sorry. I don't have your placements yet. Try: /set sun [your sun sign], or /reading sun [sign] for a one-time reading.";
+const NO_PROFILE_REPLY = "Sorry. I don't have your placements yet. Try: set sun [your sun sign], or reading sun [sign] for a one-time reading.";
 
 /**
  * /reading: Sun = theme, Moon = mood, ruling planet (from Rising, falling back to Sun) = ground
@@ -20,7 +20,7 @@ const NO_PROFILE_REPLY = "Sorry. I don't have your placements yet. Try: /set sun
 export async function handleReading(ctx: CommandContext, args: string): Promise<ReplyThread> {
   const { overrides, errors } = parseReadingArgs(args);
   if (errors.length > 0) {
-    return [`Couldn't read that: ${errors[0]} Try: /reading sun libra moon pisces`];
+    return [`Couldn't read that: ${errors[0]} Try: reading sun libra moon pisces`];
   }
 
   const placements = await resolveProfile(ctx.pool, ctx.did, ctx.resolverDeps);

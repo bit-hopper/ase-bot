@@ -11,6 +11,6 @@ describe("formatSign (§4.1, §10 gap)", () => {
 
   it("prompts /set when no sun sign is set", () => {
     const [post] = formatSign(null);
-    expect(post).toContain("/set sun");
+    expect(post).toContain("set sun");
   });
 });

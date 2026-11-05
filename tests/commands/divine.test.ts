@@ -22,7 +22,7 @@ describe("handleDivine (§6.2/§7/§10.1 — formerly /reading)", () => {
   it("prompts /set when the user has no profile at all", async () => {
     const ctx = buildTestContext(pool, { did: DID });
     const [reply] = await handleDivine(ctx);
-    expect(reply).toContain("/set sun");
+    expect(reply).toContain("set sun");
   });
 
   it("produces a formatted reading once a profile is set", async () => {

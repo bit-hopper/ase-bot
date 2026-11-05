@@ -89,7 +89,7 @@ describe("full pipeline: firehose mention -> queue -> worker -> reply (ยง11.2, ย
         makeCreateEvent({
           seq,
           did: authorDid,
-          text: "@ase.tinylil.world /moon",
+          text: "@ase.tinylil.world moon",
           facets: [{ features: [{ $type: "app.bsky.richtext.facet#mention", did: BOT_DID }] }],
         }),
       );
@@ -124,7 +124,7 @@ describe("full pipeline: firehose mention -> queue -> worker -> reply (ยง11.2, ย
       makeCreateEvent({
         seq: Date.now(),
         did: "did:plc:test-full-pipeline-no-facet",
-        text: "hey @ase.tinylil.world /moon",
+        text: "hey @ase.tinylil.world moon",
         facets: undefined,
       }),
     );

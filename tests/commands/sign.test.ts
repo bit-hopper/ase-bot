@@ -26,6 +26,6 @@ describe("handleSign (§4.1)", () => {
 
   it("prompts /set when no profile exists", async () => {
     const [reply] = await handleSign(ctx);
-    expect(reply).toContain("/set sun");
+    expect(reply).toContain("set sun");
   });
 });

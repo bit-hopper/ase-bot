@@ -27,6 +27,6 @@ describe("handleChart (§10.4)", () => {
 
   it("prompts /set when no profile exists", async () => {
     const [reply] = await handleChart(ctx);
-    expect(reply).toContain("/set sun");
+    expect(reply).toContain("set sun");
   });
 });
