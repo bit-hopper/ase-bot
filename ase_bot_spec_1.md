@@ -2,16 +2,17 @@
 
 **Version:** 1.4.0  
 **Protocol:** AT Protocol (Bluesky / ATProto ecosystem)  
-**Bot Handle:** `@ase.tinylil.world` (live — configured via `ASE_HANDLE`)  
+**Bot Handle:** `@hottie.tinylil.world` (live — formerly `@ase.tinylil.world`; login uses `ASE_HANDLE`, preferably set to the DID)  
 **Engine Name:** 🧚🏾‍♀️ Whimsical Astrology Engine
 
-**Naming note:** the bot's display name is now **Hottie** (it was "Asé"). Only the display name
-changed — the handle (`@ase.tinylil.world`), the `app.ase.profile` lexicon id, the `ASE_*`
-environment variables, and the repo/directory names keep "ase".
+**Naming note:** the bot's display name is now **Hottie** (it was "Asé") and its Bluesky handle
+moved from `@ase.tinylil.world` to `@hottie.tinylil.world` — the DID is unchanged. The
+`app.ase.profile` lexicon id, the `ASE_*` environment variables, and the repo/directory names
+keep "ase".
 
 **v1.4.0 change note:** commands are **no longer slash-prefixed**. A user invokes one by mentioning
-the bot and making the command the *first word* of the post — `@ase.tinylil.world pull`, not
-`@ase.tinylil.world /pull`. The old slash form no longer parses (it gets the help reply). A command
+the bot and making the command the *first word* of the post — `@hottie.tinylil.world pull`, not
+`@hottie.tinylil.world /pull`. The old slash form no longer parses (it gets the help reply). A command
 word anywhere other than first position is ignored, so ordinary chat containing "moon" or "pull"
 never fires a command (§4.3). Throughout this document, "`/pull`", "`/reading`" etc. remain the
 *names* of the commands (a convention for referring to them); the slash is not part of what users
@@ -246,7 +247,7 @@ Hottie responds only when **explicitly mentioned** via a rich-text facet. It nev
 
 ### 4.3 Command Parsing Rules
 
-- A command is invoked by the **first word** of the post after any leading @mention(s): `@ase.tinylil.world pull`, `@alice.bsky.social @ase.tinylil.world set sun leo`. There is **no slash**.
+- A command is invoked by the **first word** of the post after any leading @mention(s): `@hottie.tinylil.world pull`, `@alice.bsky.social @ase.tinylil.world set sun leo`. There is **no slash**.
 - The command word must be first. A command word later in the text (`hey @ase reading please`, `what is the moon doing`) is not a command → `/help` summary. This is what keeps plain-word commands from firing on ordinary chat.
 - The old slash form (`/pull`) is **not** accepted and gets the `/help` summary.
 - Commands are **case-insensitive** (`Reading`, `PULL`, `set Sun Leo` all valid).
@@ -1039,9 +1040,15 @@ help list-all     — to list all commands
 Use a **dedicated app password** for the Hottie bot account. Never use the account's primary password. Store credentials in environment variables only.
 
 ```
-ASE_HANDLE=ase.tinylil.world
+ASE_HANDLE=did:plc:xxxxxxxxxxxxxxxxxxxx   # login identifier — prefer the DID (survives handle renames)
 ASE_APP_PASSWORD=xxxx-xxxx-xxxx-xxxx
 ```
+
+`ASE_HANDLE` is the `createSession` identifier. A stale handle (e.g. the pre-rename
+`ase.tinylil.world`) fails with `Invalid identifier or password`. Bluesky allows only ~10 logins
+per 24h, so a rejected login must not become a fast crash-restart loop under
+`restart: unless-stopped`: `src/atproto/authFailureBackoff.ts` makes startup wait 3h (or until the
+server's `RateLimit-Reset`) before exiting on a 401/429, capping attempts at ~8/day.
 
 ### 11.2 Firehose Subscription
 
@@ -1051,7 +1058,7 @@ Subscribe to `com.atproto.sync.subscribeRepos` and filter for:
 - Facet type: `app.bsky.richtext.facet#mention`
 - Mentioned DID matches Hottie's own DID
 
-**Do not parse `@ase.tinylil.world` as a raw string.** Always use facets. The bot's DID is resolved once at startup and cached.
+**Do not parse `@hottie.tinylil.world` as a raw string.** Always use facets. The bot's DID is resolved once at startup and cached.
 
 ### 11.2b Firehose Connection Resilience
 
@@ -1497,7 +1504,7 @@ established short-and-warm register and checked against §9.5's voice rules.
 
 ```
 # Bluesky credentials
-ASE_HANDLE=ase.tinylil.world
+ASE_HANDLE=did:plc:xxxxxxxxxxxxxxxxxxxx
 ASE_APP_PASSWORD=xxxx-xxxx-xxxx-xxxx
 ASE_DID=did:plc:xxxxxxxxxxxxxxxxxxxx
 

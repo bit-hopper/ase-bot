@@ -19,6 +19,7 @@ import { countWhimsyPostsSince } from "./whimsy/whimsyPostLog.js";
 import { createRedisClient } from "./queue/redisClient.js";
 import { loadReadingTemplates } from "./templates/loadTemplates.js";
 import { createReadingWorker } from "./queue/worker.js";
+import { authFailureCooldownMs } from "./atproto/authFailureBackoff.js";
 
 async function main(): Promise<void> {
   const env = loadEnv();
@@ -172,7 +173,20 @@ async function main(): Promise<void> {
   process.on("SIGTERM", () => void shutdown());
 }
 
-main().catch((err: unknown) => {
+main().catch(async (err: unknown) => {
   console.error("Fatal error starting Hottie:", err);
+
+  // A rejected login must not turn into a fast crash-restart loop: Bluesky allows only ~10 logins
+  // per 24h, and `restart: unless-stopped` would burn them all in about a minute (see
+  // atproto/authFailureBackoff.ts). Sleep first so restarts are hours apart.
+  const cooldownMs = authFailureCooldownMs(err);
+  if (cooldownMs !== null) {
+    console.error(
+      `Bluesky rejected the login (check ASE_HANDLE / ASE_APP_PASSWORD in .env — ASE_HANDLE should be the account's current handle or its DID). ` +
+        `Waiting ${Math.round(cooldownMs / 60_000)} min before exiting so the restart policy doesn't exhaust Bluesky's login rate limit. ` +
+        `After fixing .env: docker compose -f docker-compose.prod.yml up -d --force-recreate app`,
+    );
+    await new Promise((resolve) => setTimeout(resolve, cooldownMs));
+  }
   process.exit(1);
 });

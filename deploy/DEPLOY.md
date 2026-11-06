@@ -53,7 +53,7 @@ cp deploy/env.production.example .env
 nano .env               # fill in ASE_HANDLE / ASE_APP_PASSWORD / ASE_DID / POSTGRES_PASSWORD
 ```
 
-- `ASE_HANDLE` / `ASE_APP_PASSWORD` / `ASE_DID`: same as local dev — a **dedicated Bluesky app
+- `ASE_HANDLE` / `ASE_APP_PASSWORD` / `ASE_DID`: same as local dev (set `ASE_HANDLE` to the DID — it survives handle renames; a stale handle makes login fail with "Invalid identifier or password") — a **dedicated Bluesky app
   password**, never the account's primary password (§11.1).
 - `POSTGRES_PASSWORD`: generate a real secret — `openssl rand -base64 24` — don't reuse local
   dev's `"ase"` password.
@@ -83,7 +83,7 @@ docker compose -f docker-compose.prod.yml logs -f app
 You should see migrations apply, then:
 
 ```
-Hottie is live as ase.tinylil.world (did:plc:...)
+Hottie is live as hottie.tinylil.world (did:plc:...)
 ```
 
 Confirm migrations landed:

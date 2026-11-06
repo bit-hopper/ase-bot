@@ -53,8 +53,8 @@ that isolated storage, never a live bot's real data.
 
 ### Invoking commands
 
-Mention the bot and make the command the **first word** — no slash: `@ase.tinylil.world pull`,
-`@ase.tinylil.world set sun leo`, `@ase.tinylil.world check retrograde`. A command word anywhere
+Mention the bot and make the command the **first word** — no slash: `@hottie.tinylil.world pull`,
+`@hottie.tinylil.world set sun leo`, `@hottie.tinylil.world check retrograde`. A command word anywhere
 else in the post is ignored (so chatter containing "moon" or "pull" never fires one), and the old
 `/pull` slash form no longer parses. Docs and code comments still write `/pull`, `/reading`, etc.
 as the *names* of the commands. See spec §4.3.
