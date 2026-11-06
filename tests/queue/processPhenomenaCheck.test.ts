@@ -71,7 +71,7 @@ describe("processPhenomenaCheck", () => {
     const { deps, posted } = makeDeps({ checkIntervalHours: 2 });
     await processPhenomenaCheck(deps);
 
-    expect(posted.filter((t) => t.endsWith("today."))).toEqual([]);
+    expect(posted.filter((t) => t.includes(" today."))).toEqual([]);
     const log = await pool.query(
       "SELECT COUNT(*) FROM phenomena_posted_log WHERE event_type IN ('new_moon', 'first_quarter', 'full_moon', 'last_quarter')",
     );
@@ -85,7 +85,7 @@ describe("processPhenomenaCheck", () => {
 
     const { deps, posted } = makeDeps({ now: () => closeNow, checkIntervalHours: 2 });
     await processPhenomenaCheck(deps);
-    expect(posted.filter((t) => t.includes("Full Moon"))).toEqual(["Full Moon today."]);
+    expect(posted.filter((t) => t.includes("Full Moon"))).toEqual(["Full Moon today. 🔮"]);
 
     const { deps: deps2, posted: posted2 } = makeDeps({ now: () => closeNow, checkIntervalHours: 2 });
     await processPhenomenaCheck(deps2);

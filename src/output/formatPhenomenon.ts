@@ -6,22 +6,29 @@ import { interpolateSlots } from "../templates/slots.js";
 import type { ReplyThread } from "./replyThread.js";
 import { moonPhaseLabel, titleCase } from "./textUtils.js";
 
-/** Phenomena posts are always one short factual sentence — no threading, no ✨. */
+/** Phenomena posts are always one short factual sentence — no threading, no ✨ (that's whimsy's
+ *  marker) — closed with a 🔮 so they're recognizable at a glance. */
+const CRYSTAL_BALL = "🔮";
+
+function withCrystalBall(sentence: string): ReplyThread {
+  return [`${sentence} ${CRYSTAL_BALL}`];
+}
+
 export function formatStationEvent(event: StationEvent): ReplyThread {
   const key = event.direction === "retrograde" ? "stationRetrograde" : "stationDirect";
-  return [interpolateSlots(phenomenaTemplate(key), { planet: titleCase(event.planet), sign: titleCase(event.sign) })];
+  return withCrystalBall(interpolateSlots(phenomenaTemplate(key), { planet: titleCase(event.planet), sign: titleCase(event.sign) }));
 }
 
 export function formatIngressEvent(event: IngressEvent): ReplyThread {
-  return [interpolateSlots(phenomenaTemplate("ingress"), { planet: titleCase(event.planet), sign: titleCase(event.toSign) })];
+  return withCrystalBall(interpolateSlots(phenomenaTemplate("ingress"), { planet: titleCase(event.planet), sign: titleCase(event.toSign) }));
 }
 
 export function formatEclipseEvent(event: EclipseEvent): ReplyThread {
   const key = event.kind === "lunar" ? "lunarEclipse" : "solarEclipse";
   const date = event.date.toISOString().slice(0, 10);
-  return [interpolateSlots(phenomenaTemplate(key), { sign: titleCase(event.sign), date })];
+  return withCrystalBall(interpolateSlots(phenomenaTemplate(key), { sign: titleCase(event.sign), date }));
 }
 
 export function formatMoonPhaseEvent(event: MoonPhaseExactEvent): ReplyThread {
-  return [interpolateSlots(phenomenaTemplate("moonPhase"), { phase: moonPhaseLabel(event.phase) })];
+  return withCrystalBall(interpolateSlots(phenomenaTemplate("moonPhase"), { phase: moonPhaseLabel(event.phase) }));
 }

@@ -1,6 +1,7 @@
 /**
  * Bare-fact templates for phenomena posts — deliberately plain/factual, no synthesis, no ✨
- * (contrast with the whimsy feature's whimsical voice). Small hand-written library, same pattern
+ * (contrast with the whimsy feature's whimsical voice). The closing 🔮 is added by
+ * output/formatPhenomenon.ts, not stored here. Small hand-written library, same pattern
  * as reading/readingConnectors.ts, not the big JSON/fallback-chain system /divine uses.
  */
 export type PhenomenaTemplateKey = "stationRetrograde" | "stationDirect" | "ingress" | "lunarEclipse" | "solarEclipse" | "moonPhase";

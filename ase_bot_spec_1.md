@@ -781,7 +781,7 @@ list before shipping, the same discipline §9.5 describes for reading content.
 
 Phenomena posts are a third, feature-complete autonomous-posting axis (§2.2), voice-distinct
 from both the oracular reading voice (§9.5) and whimsy's register (§9.7): **plain factual
-register, no synthesis, no ✨.** They report real, mathematically-verifiable astrological
+register, no synthesis, no ✨ — each post closes with a 🔮 instead.** They report real, mathematically-verifiable astrological
 events as they actually occur, rather than personalizing anything to a user's chart — there
 is no `AseContext`, no relationship-type mechanic, and no card.
 
@@ -821,6 +821,11 @@ Lunar eclipse in {{sign}} on {{date}}.
 Solar eclipse in {{sign}} on {{date}}.
 {{phase}} today.
 ```
+
+The output formatter (`src/output/formatPhenomenon.ts`) appends a space and a **🔮** to the
+rendered sentence — e.g. `Mercury turns retrograde in Virgo. 🔮` — so phenomena posts are
+recognizable at a glance (and distinct from whimsy's ✨). The 🔮 lives in the formatter, not the
+templates above.
 
 Always a single sentence, single post, no threading — unlike `/divine`'s and `/reading`'s
 multi-post output (§10.1, §10.1b).
