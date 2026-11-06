@@ -989,7 +989,7 @@ All clear — nothing's retrograde right now.
 Two-post thread (9 commands no longer fit the single-post form the original mockup assumed):
 
 ```
-🧚🏾‍♀️ I'm Hottie — what's your star sign?
+🧚🏾‍♀️ Hi, I'm Hottie — what's your star sign?
 
 Try '@ase.tinylil.world pull' to draw a random card
 
@@ -1014,7 +1014,7 @@ The bare `/help` (no `list-all`) reply is a shorter single-post getting-started 
 full reference above:
 
 ```
-🧚🏾‍♀️ I'm Hottie — what's your star sign?
+🧚🏾‍♀️ Hi, I'm Hottie — what's your star sign?
 
 Try '@ase.tinylil.world pull' to draw a random card
 
