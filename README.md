@@ -1,4 +1,4 @@
-# Asé — 🧚🏾‍♀️ Whimsical Astrology Bot
+# Hottie — 🧚🏾‍♀️ Whimsical Astrology Bot
 
 An autonomous ATProto bot that delivers personalized astrology and tarot readings by combining a
 user's natal placements with real-time planetary transits, mapped to the 78-card Tarot deck via
@@ -98,7 +98,7 @@ correctly error rather than silently degrade.
 ### `app.ase.profile` PDS writes are not implemented
 
 §11.4 describes writing user natal data to *each user's own* PDS, which "requires the user to
-authorize Asé to write to their repo." That's a full per-user OAuth authorization flow — a
+authorize Hottie to write to their repo." That's a full per-user OAuth authorization flow — a
 distinct feature from this bot's own app-password auth (which only ever grants access to the
 bot's own account). Building that OAuth flow is out of scope here; spec's own §11.4 v1 fallback
 is exactly this — DB-only storage via `user_profiles` — so `fetchAseRecord`/`writeAseRecord` are
@@ -140,7 +140,7 @@ AGPL-3.0-or-later — see [`LICENSE`](LICENSE).
 
 This project depends on [`sweph`](https://github.com/timotejroiko/sweph), which is dual-licensed
 under AGPL-3.0-or-later (default) or LGPL-3.0-or-later (only if you hold a paid Astrodienst
-professional Swiss Ephemeris license). Since Asé runs as a public network service, AGPL's
+professional Swiss Ephemeris license). Since Hottie runs as a public network service, AGPL's
 network-use clause (§13) applies: anyone interacting with the bot is entitled to the complete
-corresponding source code. Asé is published under AGPL-3.0-or-later to satisfy that obligation
+corresponding source code. Hottie is published under AGPL-3.0-or-later to satisfy that obligation
 directly — the full source is public.

@@ -1,9 +1,13 @@
-# Asé — 🧚🏾‍♀️ Whimsical Astrology Bot: Implementation Specification
+# Hottie — 🧚🏾‍♀️ Whimsical Astrology Bot: Implementation Specification
 
 **Version:** 1.4.0  
 **Protocol:** AT Protocol (Bluesky / ATProto ecosystem)  
 **Bot Handle:** `@ase.tinylil.world` (live — configured via `ASE_HANDLE`)  
 **Engine Name:** 🧚🏾‍♀️ Whimsical Astrology Engine
+
+**Naming note:** the bot's display name is now **Hottie** (it was "Asé"). Only the display name
+changed — the handle (`@ase.tinylil.world`), the `app.ase.profile` lexicon id, the `ASE_*`
+environment variables, and the repo/directory names keep "ase".
 
 **v1.4.0 change note:** commands are **no longer slash-prefixed**. A user invokes one by mentioning
 the bot and making the command the *first word* of the post — `@ase.tinylil.world pull`, not
@@ -55,7 +59,7 @@ explicitly. This is a genuine second command, not a v1/v2 relationship.
 
 ## 1. System Overview
 
-Asé is an autonomous ATProto bot that delivers personalized astrology and tarot readings by combining a user's natal placements with real-time planetary transits, then mapping the synthesis to the 78-card Tarot deck via the Hermetic Order of the Golden Dawn correspondence system — plus, occasional, unprompted whimsical posts that have nothing to do with any user's chart at all (§9.7).
+Hottie is an autonomous ATProto bot that delivers personalized astrology and tarot readings by combining a user's natal placements with real-time planetary transits, then mapping the synthesis to the 78-card Tarot deck via the Hermetic Order of the Golden Dawn correspondence system — plus, occasional, unprompted whimsical posts that have nothing to do with any user's chart at all (§9.7).
 
 **Core design principles:**
 
@@ -97,7 +101,7 @@ Asé is an autonomous ATProto bot that delivers personalized astrology and tarot
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Mention Listener**        | Subscribes to `com.atproto.sync.subscribeRepos` firehose; detects mentions via rich-text facets (not raw string search)                      |
 | **Command Queue**           | Buffers incoming jobs; protects against mention storms; enforces rate limits before work begins                                              |
-| **Profile Resolver**        | Fetches user's Asé profile record from cache or PDS; falls back to bio parsing                                                               |
+| **Profile Resolver**        | Fetches user's Hottie profile record from cache or PDS; falls back to bio parsing                                                               |
 | **Ephemeris Calculator**    | Wraps Swiss Ephemeris (sweph) to compute real-time planetary positions                                                                       |
 | **Decan Matrix Router**     | Maps a planet's exact degree to one of the 36 decans → Minor Arcana card                                                                     |
 | **Aspect Vector Evaluator** | Computes aspects between transiting planet and user's natal placements → orientation score                                                   |
@@ -131,7 +135,7 @@ or Card Draw Engine — they are not readings and carry no natal-chart context.
 
 When a reading is requested, the system resolves a user's natal placements in this order:
 
-1. **Asé profile record** (`app.ase.profile`) stored in the user's PDS — highest authority. Requires
+1. **Hottie profile record** (`app.ase.profile`) stored in the user's PDS — highest authority. Requires
    the per-user OAuth write-authorization flow described in §11.4, which is not yet built — until
    it is, this step never fires and resolution starts at step 2 (§11.4's "v1 fallback").
 2. **Bot's own user cache** (PostgreSQL `user_profiles` table) — fast path if record already processed
@@ -218,7 +222,7 @@ Bio re-parsing: if a new request arrives and `bio_hash` differs from the stored 
 
 ## 4. Command Interface
 
-Asé responds only when **explicitly mentioned** via a rich-text facet. It never monitors keywords or proactive-scans the firehose for non-mention content.
+Hottie responds only when **explicitly mentioned** via a rich-text facet. It never monitors keywords or proactive-scans the firehose for non-mention content.
 
 ### 4.1 v1 Commands
 
@@ -320,7 +324,7 @@ Retrograde status is determined by comparing sequential ephemeris positions (a p
 
 ### 6.1 The 78-Card Deck
 
-The full deck used by Asé:
+The full deck used by Hottie:
 
 - **22 Major Arcana** (The Fool through The World)
 - **56 Minor Arcana:**
@@ -843,7 +847,7 @@ Seven of Wands · Upright
 Mars in Leo · 3rd Decan
 
 [2–3 sentence synthesis narrating the interplay between the natal placements,
- the active transit, and the card's meaning in Asé's voice]
+ the active transit, and the card's meaning in Hottie's voice]
 
 [Single-line actionable closing — a question or invitation to reflect]
 ```
@@ -890,7 +894,7 @@ text exceeds 300 characters — in practice this is nearly always, given three s
 🔮 [Card Name]
 [Upright / Reversed]  ·  [Element or Archetype]
 
-[2–3 sentence reading in Asé's voice — pure tarot, no natal context]
+[2–3 sentence reading in Hottie's voice — pure tarot, no natal context]
 ```
 
 Single post if it fits; thread if it doesn't.
@@ -977,7 +981,7 @@ All clear — nothing's retrograde right now.
 ```
 🌙 Moon in [Sign] · [Phase]
 
-[1–2 sentence interpretation in Asé's voice]
+[1–2 sentence interpretation in Hottie's voice]
 ```
 
 ### 10.6 `/help` Output
@@ -1027,7 +1031,7 @@ help list-all     — to list all commands
 
 ### 11.1 Authentication
 
-Use a **dedicated app password** for the Asé bot account. Never use the account's primary password. Store credentials in environment variables only.
+Use a **dedicated app password** for the Hottie bot account. Never use the account's primary password. Store credentials in environment variables only.
 
 ```
 ASE_HANDLE=ase.tinylil.world
@@ -1040,7 +1044,7 @@ Subscribe to `com.atproto.sync.subscribeRepos` and filter for:
 
 - Record type: `app.bsky.feed.post`
 - Facet type: `app.bsky.richtext.facet#mention`
-- Mentioned DID matches Asé's own DID
+- Mentioned DID matches Hottie's own DID
 
 **Do not parse `@ase.tinylil.world` as a raw string.** Always use facets. The bot's DID is resolved once at startup and cached.
 
@@ -1098,7 +1102,7 @@ Use `com.atproto.repo.createRecord` with `app.bsky.feed.post`. For threaded repl
 
 ### 11.4 Custom Lexicon: `app.ase.profile`
 
-Store user natal data as a structured record in the user's own PDS. This requires the user to authorize Asé to write to their repo.
+Store user natal data as a structured record in the user's own PDS. This requires the user to authorize Hottie to write to their repo.
 
 ```json
 {
@@ -1107,7 +1111,7 @@ Store user natal data as a structured record in the user's own PDS. This require
   "defs": {
     "main": {
       "type": "record",
-      "description": "User natal placements for Asé bot personalization.",
+      "description": "User natal placements for Hottie bot personalization.",
       "key": "literal:self",
       "record": {
         "type": "object",
@@ -1124,7 +1128,7 @@ Store user natal data as a structured record in the user's own PDS. This require
 }
 ```
 
-**v1 fallback:** If PDS write authorization is not yet implemented, store all profile data in Asé's own PostgreSQL `user_profiles` table only. The lexicon write is a progressive enhancement.
+**v1 fallback:** If PDS write authorization is not yet implemented, store all profile data in Hottie's own PostgreSQL `user_profiles` table only. The lexicon write is a progressive enhancement.
 
 ---
 
@@ -1145,7 +1149,7 @@ Retry: 2 attempts with exponential backoff
 
 ```typescript
 interface ReadingJob {
-  mentionUri: string; // AT URI of the post that mentioned Asé
+  mentionUri: string; // AT URI of the post that mentioned Hottie
   mentionCid: string;
   authorDid: string;
   authorHandle: string;
@@ -1311,7 +1315,7 @@ computation the limit was originally sized for, just under its post-redesign nam
 `"Hey! Slow down a little — try again in {n}s."` for the 30-second minimum-gap case. Do not
 silently discard.
 
-**Opt-in only:** Asé never interacts with a user unless explicitly mentioned via a facet. No proactive DMs, no scanning for keywords.
+**Opt-in only:** Hottie never interacts with a user unless explicitly mentioned via a facet. No proactive DMs, no scanning for keywords.
 
 ---
 

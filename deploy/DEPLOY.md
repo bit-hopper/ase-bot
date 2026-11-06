@@ -1,4 +1,4 @@
-# Deploying Asé to AWS
+# Deploying Hottie to AWS
 
 Single EC2 instance running Docker Compose (Postgres + Redis + the app itself) — no ECS, no
 RDS/ElastiCache, no load balancer. The bot has no inbound HTTP endpoint (it only makes outbound
@@ -83,7 +83,7 @@ docker compose -f docker-compose.prod.yml logs -f app
 You should see migrations apply, then:
 
 ```
-Asé is live as ase.tinylil.world (did:plc:...)
+Hottie is live as ase.tinylil.world (did:plc:...)
 ```
 
 Confirm migrations landed:

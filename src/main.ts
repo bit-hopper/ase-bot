@@ -142,7 +142,7 @@ async function main(): Promise<void> {
   let firehose = createFirehose(watchdog.markActivity);
   runFirehose(firehose);
 
-  console.log(`Asé is live as ${agent.session?.handle ?? "?"} (${botDid})`);
+  console.log(`Hottie is live as ${agent.session?.handle ?? "?"} (${botDid})`);
 
   let shuttingDown = false;
   const shutdown = async (): Promise<void> => {
@@ -173,6 +173,6 @@ async function main(): Promise<void> {
 }
 
 main().catch((err: unknown) => {
-  console.error("Fatal error starting Asé:", err);
+  console.error("Fatal error starting Hottie:", err);
   process.exit(1);
 });
