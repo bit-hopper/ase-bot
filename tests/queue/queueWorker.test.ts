@@ -56,7 +56,7 @@ describe("BullMQ queue + worker end-to-end (§12.1)", () => {
       });
 
       const { reply } = await promise;
-      expect(reply.join("\n")).toContain("Asé");
+      expect(reply.join("\n")).toContain("Hottie");
     } finally {
       await worker.close();
       await queue.close();

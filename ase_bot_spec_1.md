@@ -985,9 +985,11 @@ All clear — nothing's retrograde right now.
 Two-post thread (9 commands no longer fit the single-post form the original mockup assumed):
 
 ```
-🧚🏾‍♀️ I'm Asé — an astrology bot with a scoop of whimsy ✨
+🧚🏾‍♀️ I'm Hottie — what's your star sign?
 
-All commands (just mention me with one — no slash needed):
+Try '@ase.tinylil.world pull' to draw a random card
+
+All commands:
 
 set sun [sign] moon [sign] rising [sign]
 reading  — for a Sun, Moon & Rising reading
@@ -1008,11 +1010,11 @@ The bare `/help` (no `list-all`) reply is a shorter single-post getting-started 
 full reference above:
 
 ```
-🧚🏾‍♀️ I'm Asé — an astrology bot with a scoop of whimsy ✨
+🧚🏾‍♀️ I'm Hottie — what's your star sign?
 
-To get started, mention me with: set sun [your sun sign]
+Try '@ase.tinylil.world pull' to draw a random card
 
-Commands:
+For more:
 
 set sun [sign] moon [sign] rising [sign]
 reading  — for a Sun, Moon & Rising reading

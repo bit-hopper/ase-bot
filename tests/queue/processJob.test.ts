@@ -68,7 +68,7 @@ describe("processReadingJob (§12.3)", () => {
 
     const result = await processReadingJob(deps, makeJob({ command: "help" }));
     expect(result.outcome).toBe("posted");
-    expect(posted!.join("\n")).toContain("Asé");
+    expect(posted!.join("\n")).toContain("Hottie");
   });
 
   it("rate-limits a second interaction within 30s and still posts a reply (§14)", async () => {

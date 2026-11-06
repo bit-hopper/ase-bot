@@ -13,9 +13,14 @@ describe("formatHelpQuick (default /help)", () => {
     expect(formatHelpQuick()[0]).toContain("help list-all");
   });
 
-  it("includes the getting-started line and the two most important commands", () => {
+  it("introduces the bot as Hottie and leads with a copy-pasteable pull example", () => {
     const post = formatHelpQuick()[0]!;
-    expect(post).toContain("To get started, mention me with: set sun [your sun sign]");
+    expect(post).toContain("I'm Hottie — what's your star sign?");
+    expect(post).toContain("'@ase.tinylil.world pull'");
+  });
+
+  it("includes the two most important commands", () => {
+    const post = formatHelpQuick()[0]!;
     expect(post).toContain("set sun [sign] moon [sign] rising [sign]");
     expect(post).toContain("reading");
   });
@@ -27,6 +32,12 @@ describe("formatHelpFull (help list-all)", () => {
     for (const cmd of ["set", "reading", "divine", "pull", "chart", "moon", "check", "sign", "help"]) {
       expect(full).toContain(cmd);
     }
+  });
+
+  it("opens with the same Hottie greeting and pull example as the quick help", () => {
+    const first = formatHelpFull()[0]!;
+    expect(first).toContain("I'm Hottie — what's your star sign?");
+    expect(first).toContain("'@ase.tinylil.world pull'");
   });
 
   it("mentions the check all and check retrograde subcommands", () => {

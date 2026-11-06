@@ -22,7 +22,7 @@ afterAll(async () => {
 describe("handleCommand router (§4.3)", () => {
   it("routes /help to the quick help reply", async () => {
     const thread = await handleCommand(ctx, "help");
-    expect(thread.join("\n")).toContain("Asé");
+    expect(thread.join("\n")).toContain("Hottie");
     expect(thread).toHaveLength(1);
   });
 
@@ -34,12 +34,12 @@ describe("handleCommand router (§4.3)", () => {
 
   it("routes an unrecognized command to /help (§4.3)", async () => {
     const thread = await handleCommand(ctx, "bogus");
-    expect(thread.join("\n")).toContain("Asé");
+    expect(thread.join("\n")).toContain("Hottie");
   });
 
   it("routes text with no command token at all to /help (§4.3)", async () => {
     const thread = await handleCommand(ctx, "hi Asé what's up");
-    expect(thread.join("\n")).toContain("Asé");
+    expect(thread.join("\n")).toContain("Hottie");
   });
 
   it("routes /sign to the sign handler", async () => {
@@ -55,7 +55,7 @@ describe("handleCommand router (§4.3)", () => {
 
   it("is case-insensitive at the router level too", async () => {
     const thread = await handleCommand(ctx, "HELP");
-    expect(thread.join("\n")).toContain("Asé");
+    expect(thread.join("\n")).toContain("Hottie");
   });
 
   it("routes /divine to the renamed original /reading engine", async () => {
