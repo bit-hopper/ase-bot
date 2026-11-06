@@ -16,7 +16,7 @@ describe("formatHelpQuick (default /help)", () => {
   it("introduces the bot as Hottie and leads with a copy-pasteable pull example", () => {
     const post = formatHelpQuick()[0]!;
     expect(post).toContain("Hi, I'm Hottie — what's your star sign?");
-    expect(post).toContain("'@ase.tinylil.world pull'");
+    expect(post).toContain("Try '@hottie.tinylil.world pull' to draw a random card");
   });
 
   it("includes the two most important commands", () => {
@@ -37,7 +37,7 @@ describe("formatHelpFull (help list-all)", () => {
   it("opens with the same Hottie greeting and pull example as the quick help", () => {
     const first = formatHelpFull()[0]!;
     expect(first).toContain("Hi, I'm Hottie — what's your star sign?");
-    expect(first).toContain("'@ase.tinylil.world pull'");
+    expect(first).toContain("Try '@hottie.tinylil.world pull' to draw a random card");
   });
 
   it("mentions the check all and check retrograde subcommands", () => {

@@ -5,7 +5,7 @@ export function formatHelpQuick(): ReplyThread {
   return [
     `🧚🏾‍♀️ Hi, I'm Hottie — what's your star sign?
 
-Try '@ase.tinylil.world pull' to draw a random card
+Try '@hottie.tinylil.world pull' to draw a random card
 
 For more:
 
@@ -21,7 +21,7 @@ export function formatHelpFull(): ReplyThread {
   return [
     `🧚🏾‍♀️ Hi, I'm Hottie — what's your star sign?
 
-Try '@ase.tinylil.world pull' to draw a random card
+Try '@hottie.tinylil.world pull' to draw a random card
 
 All commands:
 

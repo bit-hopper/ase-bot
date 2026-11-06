@@ -18,6 +18,7 @@ export interface ParsedCommand {
  *  "@alice.bsky.social @ase.tinylil.world ". Bluesky puts the mention text in the post body, so it
  *  has to be skipped to reach the command word. */
 const LEADING_MENTIONS = /^(?:\s*@[\w.-]+[,:]?)*\s*/;
+const WRAPPING_QUOTES = /^["'“”‘’]+|["'“”‘’]+$/g;
 const COMMAND_TOKEN = /^(\w+)\s*([\s\S]*)$/;
 
 /** §4.3 — case-insensitive; the command is the FIRST word of the post after any leading @mentions
@@ -26,7 +27,9 @@ const COMMAND_TOKEN = /^(\w+)\s*([\s\S]*)$/;
  *  slash-prefixed "/pull" no longer parses and falls through to the /help reply. (Mention-facet
  *  detection happens upstream — §11.2; this only skips the mention *text* to reach the command.) */
 export function parseCommand(text: string): ParsedCommand {
-  const body = text.replace(LEADING_MENTIONS, "");
+  // Forgive a command pasted with its quotes still on ('@ase pull'), as examples are often quoted.
+  const unquoted = text.trim().replace(WRAPPING_QUOTES, "");
+  const body = unquoted.replace(LEADING_MENTIONS, "");
   const match = body.match(COMMAND_TOKEN);
   if (!match) return { command: null, args: body.trim() };
 

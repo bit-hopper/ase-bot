@@ -36,6 +36,11 @@ describe("parseCommand (§4.3 — first word, no slash)", () => {
     });
   });
 
+  it("forgives a command pasted with its surrounding quotes still on", () => {
+    expect(parseCommand("'@ase.tinylil.world pull'")).toEqual({ command: "pull", args: "" });
+    expect(parseCommand("“@ase.tinylil.world check venus”")).toEqual({ command: "check", args: "venus" });
+  });
+
   it("tolerates leading whitespace", () => {
     expect(parseCommand("  \n @ase.tinylil.world   chart").command).toBe("chart");
   });
