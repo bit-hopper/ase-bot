@@ -42,17 +42,17 @@ export function parseReadingArgs(argsText: string): ParseReadingArgsResult {
     const signRaw = tokens[i + 1];
 
     if (!isFieldKeyword(field)) {
-      errors.push(`Unknown field "${fieldRaw}". Expected one of: sun, moon, rising.`);
+      errors.push(`"${fieldRaw}" isn't one of my placements. Try sun, moon, or rising.`);
       continue;
     }
     if (!signRaw) {
-      errors.push(`Missing sign value for "${field}".`);
+      errors.push(`I need a sign after "${field}".`);
       continue;
     }
 
     const sign = fuzzyMatchSign(signRaw);
     if (!sign) {
-      errors.push(`Unrecognized sign "${signRaw}". Try a full sign name, e.g. libra.`);
+      errors.push(`I don't recognize the sign "${signRaw}". Try a full sign name, like libra.`);
       continue;
     }
 

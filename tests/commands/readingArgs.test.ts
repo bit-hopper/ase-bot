@@ -34,18 +34,18 @@ describe("parseReadingArgs", () => {
   it("reports an error for an unknown field keyword", () => {
     const result = parseReadingArgs("mars aries");
     expect(result.overrides).toEqual({});
-    expect(result.errors[0]).toMatch(/Unknown field/);
+    expect(result.errors[0]).toMatch(/isn't one of my placements/);
   });
 
   it("reports an error for a sign too far from any valid sign to guess", () => {
     const result = parseReadingArgs("sun banana");
     expect(result.overrides).toEqual({});
-    expect(result.errors[0]).toMatch(/Unrecognized sign/);
+    expect(result.errors[0]).toMatch(/don't recognize the sign/);
   });
 
   it("reports an error for a dangling field with no sign after it", () => {
     const result = parseReadingArgs("sun libra moon");
     expect(result.overrides).toEqual({ sun: "libra" });
-    expect(result.errors[0]).toMatch(/Missing sign value/);
+    expect(result.errors[0]).toMatch(/I need a sign after/);
   });
 });

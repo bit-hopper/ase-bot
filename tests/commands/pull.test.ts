@@ -24,7 +24,7 @@ describe("handlePull (§6.4/§9.4/§10.2)", () => {
 
   it("rejects v2 arguments like /pull 3", async () => {
     const [reply] = await handlePull(ctx, "3");
-    expect(reply).toMatch(/doesn't take any arguments/);
+    expect(reply).toMatch(/doesn't take any extras/);
   });
 
   it("draws different cards across repeated calls (true randomness, §6.4)", async () => {

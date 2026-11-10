@@ -11,7 +11,7 @@ import { fetchTransitSnapshots } from "./positions.js";
 export async function handlePull(ctx: CommandContext, args: string): Promise<ReplyThread> {
   if (args.trim().length > 0) {
     // §4.2 — spreads/counts ("/pull 3", "/pull love") are v2, not implemented yet.
-    return ["pull doesn't take any arguments yet — just: pull"];
+    return ["pull doesn't take any extras yet — just: pull"];
   }
 
   const card = drawPullCard();

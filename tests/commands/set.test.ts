@@ -31,18 +31,18 @@ describe("handleSet (§3.3/§4.3)", () => {
 
   it("returns the usage string for empty args", async () => {
     const [reply] = await handleSet(ctx, "");
-    expect(reply).toMatch(/Usage: set/);
+    expect(reply).toMatch(/Try: set/);
   });
 
   it("returns an error message for an invalid sign, without storing anything", async () => {
     const [reply] = await handleSet(ctx, "sun bogus");
-    expect(reply).toMatch(/Unknown sign/);
+    expect(reply).toMatch(/don't know the sign/);
   });
 
   it("confirms valid placements alongside a warning for invalid ones in the same command", async () => {
     const [reply] = await handleSet(ctx, "sun leo moon bogus");
     expect(reply).toContain("Sun: Leo");
-    expect(reply).toMatch(/⚠️.*Unknown sign/s);
+    expect(reply).toMatch(/⚠️.*don't know the sign/s);
   });
 
   it("calls writeAseRecord as a best-effort PDS write", async () => {

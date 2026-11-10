@@ -24,23 +24,23 @@ describe("parseSetArgs (§3.3, pure)", () => {
   it("errors on an unknown field", () => {
     const { placements, errors } = parseSetArgs("ascendant leo");
     expect(placements).toEqual({});
-    expect(errors[0]).toMatch(/Unknown field/);
+    expect(errors[0]).toMatch(/isn't one of my placements/);
   });
 
   it("errors on an unknown sign", () => {
     const { placements, errors } = parseSetArgs("sun leoo");
     expect(placements).toEqual({});
-    expect(errors[0]).toMatch(/Unknown sign/);
+    expect(errors[0]).toMatch(/don't know the sign/);
   });
 
   it("errors on a dangling field with no value", () => {
     const { errors } = parseSetArgs("sun");
-    expect(errors[0]).toMatch(/Missing sign value/);
+    expect(errors[0]).toMatch(/I need a sign after/);
   });
 
   it("errors on empty args", () => {
     const { errors } = parseSetArgs("");
-    expect(errors[0]).toMatch(/No placements provided/);
+    expect(errors[0]).toMatch(/didn't catch any placements/);
   });
 
   it("collects valid placements alongside errors for invalid ones in the same command", () => {

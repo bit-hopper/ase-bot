@@ -3,7 +3,7 @@ import { titleCase } from "../output/textUtils.js";
 import { applySetCommand } from "../profile/setCommand.js";
 import type { CommandContext } from "./context.js";
 
-const USAGE = "Usage: set sun [sign] moon [sign] rising [sign]";
+const USAGE = "Try: set sun [sign] moon [sign] rising [sign]";
 
 /** §3.3 / §4.3 */
 export async function handleSet(ctx: CommandContext, args: string): Promise<ReplyThread> {

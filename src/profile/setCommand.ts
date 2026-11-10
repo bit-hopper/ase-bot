@@ -32,7 +32,7 @@ export function parseSetArgs(argsText: string): ParseSetResult {
   const errors: string[] = [];
 
   if (tokens.length === 0) {
-    errors.push("No placements provided. Usage: set sun [sign] moon [sign] rising [sign]");
+    errors.push("I didn't catch any placements. Try: set sun [sign] moon [sign] rising [sign]");
     return { placements, errors };
   }
 
@@ -42,17 +42,17 @@ export function parseSetArgs(argsText: string): ParseSetResult {
     const signRaw = tokens[i + 1];
 
     if (!isFieldKeyword(field)) {
-      errors.push(`Unknown field "${fieldRaw}". Expected one of: sun, moon, rising.`);
+      errors.push(`"${fieldRaw}" isn't one of my placements. Try sun, moon, or rising.`);
       continue;
     }
     if (!signRaw) {
-      errors.push(`Missing sign value for "${field}".`);
+      errors.push(`I need a sign after "${field}".`);
       continue;
     }
 
     const sign = parseCanonicalSign(signRaw);
     if (!sign) {
-      errors.push(`Unknown sign "${signRaw}". Must be one of the 12 zodiac signs.`);
+      errors.push(`I don't know the sign "${signRaw}". Try one of the 12 zodiac signs.`);
       continue;
     }
 
